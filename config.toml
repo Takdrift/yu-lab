@@ -2,7 +2,7 @@
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "http://10.71.206.64/" # http://localhost:1313/    发布到服务器时需要修改为 http://10.71.206.64/
+baseURL = "" # http://localhost:1313/    发布到服务器时需要修改为 http://10.71.206.64/
 title = "Yu Group"
 enableRobotsTXT = true
 enableEmoji = true
