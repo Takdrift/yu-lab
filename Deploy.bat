@@ -1,2 +1,2 @@
-﻿cd C:\Users\Administrator\Documents\GitHub\yu-lab
+﻿cd %~dp0
 hugo

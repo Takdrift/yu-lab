@@ -18,8 +18,17 @@ autoCollapseToc: no
 contentCopyright: no
 reward: no
 mathjax: no
+typora-root-url: ..\..\..\static
 ---
 # title1
+------
+
+
+
+[TOC]
+
+
+
 ## title 2
 ### title 3
 content
@@ -29,4 +38,4 @@ liangge huiche
 kongyihang  
 ![pic](https://gitee.com/heavenzone/picturebed/raw/master/zhonghaoguang.com/2018/20180117-06-serve-site.png)
 
-
+![Avi_100px](/2019-03-11-second-blog.image/Avi_100px.jpg)

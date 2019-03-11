@@ -9,10 +9,10 @@ draft: false
 
 #weight: 1 #是否置顶
 
-menu:
-  main:
-    parent: "邵"
-    weight: 1
+#menu:
+  #main:
+    #parent: "邵"
+    #weight: 1
 
 typora-root-url: ..\..\..\static #定义图片根目录，后退三级
 ---

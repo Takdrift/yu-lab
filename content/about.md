@@ -12,5 +12,5 @@ mathjax: false
 
 # 说明
 
-该站用于Yu Group记录组会内容
+该站用于Yu Group组会记录
 
