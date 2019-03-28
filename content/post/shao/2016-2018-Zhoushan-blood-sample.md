@@ -1,11 +1,11 @@
 ---
 title: "舟山孕妇血样情况"
 date: 2019-03-12
-#lastmod: {{ .Date }}
+lastmod: 2019-03-28
 draft: false
 keywords: [舟山, 血样]
 tags: [舟山, 血样, 组会]
-categories: [邵]
+categories: [邵, 数据概况]
 author: "Shao"
 ---
 
