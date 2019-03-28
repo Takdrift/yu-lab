@@ -12,5 +12,5 @@ mathjax: false
 
 # 说明
 
-该站用于Yu Group组会记录
+Yu Group组会Blog
 
