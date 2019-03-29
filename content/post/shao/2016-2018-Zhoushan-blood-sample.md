@@ -221,11 +221,19 @@ author: "Shao"
 
 ## 六. 其他疾病信息
 
-<center>![wordcloud](2016-2018-zhoushan-blood-sample.img/wordcloud.png)</center>
+<Iframe src="2016-2018-zhoushan-blood-sample.img/wordcloud";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
 
 ### 图6.1 孕期高危因素情况
 
 ![riskname](2016-2018-zhoushan-blood-sample.img/riskname.png)
+
+### 全部舟山孕妇产前随访高危因素分布情况（n=84260）
+
+<Iframe src="2016-2018-zhoushan-blood-sample.img/wordcloud_all_data";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+
+**图6.2 舟山孕妇产前随访高危因素分布(n=84260)**
+
+![riskname_all_data](2016-2018-zhoushan-blood-sample.img/riskname_all_data.png)
 
 GDM分级：
 
@@ -245,8 +253,10 @@ GDM分级：
 
 ### 表6.1 母婴结局（n=5465）
 
-<center>![母婴结局](2016-2018-zhoushan-blood-sample.img/母婴结局.png)</center>
+<div align=center><img src="2016-2018-zhoushan-blood-sample.img/母婴结局.png"/></div>
 
 > 5508人中5465人可合并上分娩数据（fmdj和xsedj数据），其中43人有两次不同的出生体重记录（应该为**双胞胎**）
 
+### 表6.2 母婴结局（是否有孕早期VD）
 
+<div align=center><img src="2016-2018-zhoushan-blood-sample.img/母婴结局孕早vd.png"/></div>
