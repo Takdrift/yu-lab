@@ -1,22 +1,12 @@
 ---
 title: "舟山儿童保健体检概况SAS code"
 date: 2019-04-10
-#lastmod: {{ .Date }}
+lastmod: 2019-04-10
 draft: false
 keywords: [舟山, 高危因素, SAS code]
 tags: [舟山, 高危因素, SAS code]
-categories: [邵]
+categories: [邵, SAS code]
 author: "Shao"
-
-# You can also close(false) or open(true) something for this content.
-# P.S. comment can only be closed
-#comment: false
-#toc: false
-autoCollapseToc: false
-# You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: false
-reward: false
-mathjax: false
 ---
 
 以下为儿童保健体检（`eb_bjtj`）数据概况展示的相关SAS code
