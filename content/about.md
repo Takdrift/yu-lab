@@ -1,5 +1,5 @@
 ---
-title: "关于"
+title: "About"
 date: 2019-03-10T16:29:52+08:00
 lastmod: 2019-03-10T16:30:52+08:00
 menu: "main"
@@ -12,5 +12,10 @@ mathjax: false
 
 # 说明
 
-Yu Group组会Blog
+Yu Group博客用于记录
+
+- 组会汇报内容
+- 文献阅读笔记
+- SAS & R代码分享
+- 未完待续...
 
