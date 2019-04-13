@@ -1,2 +1,5 @@
-@ECHO # 创建本地Web服务器
+@ECHO # deploy local server
+
 hugo server
+
+pause
