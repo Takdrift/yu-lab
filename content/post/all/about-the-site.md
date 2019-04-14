@@ -42,12 +42,19 @@ author: "Shao"
 
 1. 从[Hugo](<https://github.com/gohugoio/hugo/releases>)的GitHub主页上下载对应版本（**32**或**64**位）的软件，如果不知道自己操作系统属于哪一种，[点这里](<https://support.microsoft.com/zh-cn/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64>)。下载完毕之后解压得到hugo.exe文件。
 
-2. 右键我的电脑，点击`属性`，点击`高级系统设置`，选择`高级`选项卡，点击`环境变量`，在系统变量的`变量`里找到`Path`并双击，假设hugo.exe在`D:\Hugo\`目录下，则在变量值中添加D:\Hugo\，使用分号（英文状态）与前面的路径分隔。
+2. 第2步有**两种**方案
 
-   - 这一步的目的是将hugo.exe添加到系统环境中，这样在运行hugo相关命令时系统才能识别
-   - 另外一种做法是将hugo.exe放到博客根目录下，这样就无需第2步的设置（将博客储存在U盘时可以采取这种方式，只需在博客根目录下运行deploy local server.bat文件就可以生成博客的本地预览）（若采用这种方法，先看[GitHub篇](#github篇)下载博客）
+   - 2.1 右键我的电脑，点击`属性`，点击`高级系统设置`，选择`高级`选项卡，点击`环境变量`，在系统变量的`变量`里找到`Path`并双击，将第一步解压得到的hugo.exe放到你喜欢的位置，假设hugo.exe在`D:\Hugo\`目录下，则在`变量值`中添加D:\Hugo\，使用分号（英文状态）与前面的路径分隔。
 
-3. 按`Win+R`，输入`cmd`回车，然后在命令行输入`hugo version`回车，若如下成功显示hugo版本信息则说明设置成功。
+   - 2.2 将hugo.exe放到博客根目录下（即`yu-lab`目录下）即可。
+
+     > **两种方案的区别**
+     >
+     > - **2.1** 这种方法是将hugo.exe添加到系统环境中，这样不管在哪里运行hugo相关命令系统都能识别
+     >
+     > - **2.2** 因为hugo相关命令是在根目录下运行的，此方法将hugo.exe放在博客根目录下，所以能够正常运行。该方法适合于只有一个博客的情况，以及将博客储存在U盘中时可以采用该方案。（若采用此方案，先看[GitHub篇](#github篇)下载博客）
+
+3. 若采用2.1方案，按`Win+R`，输入`cmd`回车，然后在命令行输入`hugo version`回车，若如下成功显示hugo版本信息则说明设置成功。
 
    ```powershell
    hugo version
@@ -56,18 +63,20 @@ author: "Shao"
 
 ### Github篇
 
-[GitHub](<https://github.com/>)是一个托管软件源代码（具有版本控制功能）的网站，并且支持**多人协作**。2008年成立，2018年6月4日被微软以75亿美元收购。
+[GitHub](<https://github.com/>)是一个托管软件源代码（具有版本控制功能）的网站，支持**多人协作**。2008年成立，2018年6月4日被微软以75亿美元收购。
 
-我们将生成博客网站的文件托管在GitHub上，然后通过多人协作的机制，就可以多人合作写博客了。想了解更多如何使用GitHub，可以到GitHub官网参考相应的[教程](https://github.blog/2018-04-19-introducing-github-learning-lab/)。
+我们将生成博客网站的文件托管在GitHub上，通过多人协作的机制实现多人共同写博客。
 
-在[GitHub](<https://github.com/>)官网注册好账号并下载对应的桌面客户端（[GitHub Desktop](<https://desktop.github.com/>)）之后，我们就可以开始博客之旅了。
+在[GitHub](<https://github.com/>)官网注册好账号并下载相应的桌面客户端（[GitHub Desktop](<https://desktop.github.com/>)）之后，我们就可以开始博客之旅了。
 
 在开始操作之前，先来了解一下4个基本的GitHub概念，`repo`、`fork`、`push`和`pull`
 
 - `repo`即repository，指代码仓库，即你托管在Github上的项目（如本文中的**博客**）
 - `fork`指复制别人的`repo`
 - `push`指将本地的修改push到GitHub，可理解为**上传**
-- `pull`，或者说`pull request`指申请**合并**修改（当你`fork`了别人的`repo`，然后修改或增加了一些内容，可以通过`pull request`申请将你的修改合并至原始的`repo`），这也是**多人协作**写博客的基础。
+- `pull`，准确地说`pull request`指申请**合并**修改（当你`fork`了别人的`repo`，然后修改或增加了内容，可通过`pull request`申请将你的修改合并至源`repo`）
+
+想进一步了解GitHub的工作机制，可以到GitHub官网参考相应的[教程](https://github.blog/2018-04-19-introducing-github-learning-lab/)。
 
 #### 1.Fork博客源repo
 
@@ -77,15 +86,15 @@ author: "Shao"
 
 #### 2.下载博客
 
-完成第一步后，打开GitHub Desktop客户端，登陆自己的账号，点击`File`-`Clone repository`，根据下图操作后整个博客就克隆到我们的电脑上了。
+完成第一步后，打开GitHub Desktop客户端，登陆自己的账号，点击`File`-`Clone repository`（**Ctrl+Shift+O**），根据下图操作后GitHub上的整个博客就克隆到我们的电脑上了。
 
 ![clone](about-the-site.assets/clone.png)
 
 #### 3. 添加文章
 
-打开上一步克隆博客的本地路径，`yu-lab`目录下的`content`文件夹就是存放博客文章的地方，添加新文章只需在`content\post\`目录下添加相应的`markdown`文件即可（关于**markdown**具体的语法见[下文](#markdown篇)）。
+打开上一步克隆博客所选的本地路径，`yu-lab`目录（博客**根目录**）下的`content`文件夹就是存放博客文章的地方，添加新文章只需在`content\post\`目录下添加相应的**markdown**文件即可（有关**markdown**的介绍见[下文](#markdown篇)）。
 
-例如，我在`content\post\all`文件夹下新建了一个名为`share-r-code.md`的文件，文件开头部分内容如下：
+例如，在`content\post\all`文件夹下新建了一个名为`share-r-code.md`的文件，文件开头部分内容如下：
 
 ```markdown
 ---
@@ -102,9 +111,9 @@ author: "Yu Group"  # 作者
 
 **R code示例书写规范：**
 
-1. 第一行注释说明R code的用途及作者
+1. 第一行注释说明R Code的用途及作者
 2. 第二行开始进行代码的书写，尽量选择R自带数据进行演示，若数据格式不同，需提供数据
-3. 对每一步进行注释，注释若是独立的一行则在行首输入`#`后空1格，然后开始注释，若注释紧接代码后面，先空2格，`#`，然后空1格进行注释。推荐阅读：[R代码书写规范](<https://google.github.io/styleguide/Rguide.xml>)）
+3. 对每一步进行注释，注释若是独立的一行则在行首输入`#`后空1格，然后开始注释，若注释紧接代码后面，代码后先空2格，输入`#`，然后空1格进行注释。推荐阅读：[R代码书写规范](<https://google.github.io/styleguide/Rguide.xml>)）
 
 第一行注释示例如下，在输入完用途后输入4个`-`再添加作者信息（这样复制到Rstudio中可以生成标题）
 ```
@@ -122,7 +131,7 @@ author: "Yu Group"  # 作者
 
 **本地预览博客**
 
-文章保存后，我们可以通过运行`yu-lab`目录下的`Deploy Local Server.bat`生成本地预览，运行后在浏览器地址栏输入<localhost:1313>即可预览博客。
+文章保存后，我们可以通过运行`yu-lab`目录下的`Deploy Local Server.bat`生成本地预览，运行后在浏览器地址栏输入<localhost:1313>即可进行预览。
 
 **提交修改至GitHub**
 
@@ -132,7 +141,7 @@ author: "Yu Group"  # 作者
 
 **将修改同步至GitHub**
 
-点击`Commit to master`后，还需要点击面板右侧的`Push origin`（或**Ctrl+P**）才会真正将本地修改同步至GitHub。
+点击`Commit to master`后，还需要点击面板右侧的`Push origin`（**Ctrl+P**）才会真正将本地修改同步至GitHub。
 
 ![push](about-the-site.assets/push.png)
 
@@ -148,11 +157,21 @@ author: "Yu Group"  # 作者
 
 ![creat pr2](about-the-site.assets/creat pr2.png)
 
-接着，源`repo`所有者会收到相应的合并请求（`pull request`），审查通过之后原始仓库的内容就会得到更新。
+接着，源`repo`所有者会收到相应的合并请求（`pull request`），审查通过并`merge`之后源`repo`的内容就会得到更新。
 
-还记得上面添加的share-r-code.md文件吗，生成博客文章后是[这个样子的](/post/all/share-r-code)。
+还记得上面添加的share-r-code.md文件吗，这是该文件通过hugo生成的[博客文章](/post/all/share-r-code)。
 
-以上就是在博客中添加**新文章**的完整工作流，下文将重点介绍**markdown**。
+以上就是在博客中添加**新文章**的整个工作流。
+
+#### 4.同步源repo的更新
+
+若源`repo`更新了内容，我们需要将`fork`过来的`repo`进行更新以保持与源`repo`一致。
+
+操作步骤如下：
+
+1. 待完善...
+2.  
+3. 
 
 ### Markdown篇
 
@@ -163,7 +182,7 @@ author: "Yu Group"  # 作者
 **Markdown**的**优点**概括起来就是
 
 - 简单易上手的标记语言，让你专注于文字内容，无需顾虑排版
-- 强大的输出，可以转化为不同的格式
+- 强大的输出，可以转化为各种不同格式
 - 相对标准化的语法，多平台支持，通用性强
 - 支持`html`语言，具有较强的交互性与扩展性
 - 纯文本，文件体积小（配合[**图床**](#图床软件推荐)效果更佳）
@@ -230,7 +249,7 @@ table <- lapply(c("cyl", "gear", "am"), function(x) xtabs(~ vs + get(x), data = 
 table <- lapply(c("cyl", "gear", "am"), function(x) xtabs(~ vs + get(x), data = mtcars))
 ```
 
-Hugo支持包括`R`在内的大部分编程语言的高亮，但目前还不支持`SAS`:joy:。
+Hugo支持包括`R`在内的大部分编程语言的**高亮**，但目前还不支持`SAS`:joy:。
 
 ##### 2.5 强调
 在强调内容两侧分别加上`*`或者`_`，如：  
@@ -301,7 +320,7 @@ You can create footnotes like this[^footnote].
 
 [^footnote]: Here is the *text* of the **footnote**.
 
-将鼠标移至参考上标会显示相应的内容。
+将鼠标移至参考上标会显示相应的内容，相应内容显示在文末。
 
 ##### 2.9 图片
 添加图片的形式和链接相似，只需在链接的基础上前方加一个`！`。
@@ -314,7 +333,7 @@ You can create footnotes like this[^footnote].
 相当于**反转义**作用。使符号成为普通符号。
 #### 3.Markdown编辑器推荐
 
-上文已经提到了[*typora*](<https://typora.io/>)，市面上大部分**markdown**编辑器都是分栏显示，即左边显示源码，右边显示编译成`html`之后的文档，而typora有两种模式，一种是实时编译模式（即一边输入一边编译），一种是源码模式，二者可通过`Ctrl+/`进行切换。
+上文已经提到了[*typora*](<https://typora.io/>)，市面上大部分**markdown**编辑器采用的是分栏显示，即左边显示源码，右边显示编译成`html`之后的文档，而typora将二者独立，即实时编译模式（即一边输入一边编译）和源码模式，二者可通过`Ctrl+/`进行切换。
 
 ![typora typing](about-the-site.assets/typora typing.gif)
 
@@ -329,29 +348,42 @@ typora的优点：
 
 在添加文章部分提到了在文章中插入图片的两种方式，网络引用（图床）和本地引用。
 
-图床的使用见[下文](#图床软件推荐)，这里介绍一下如何设置本地图片的**相对路径引用**
+图床的使用见[下文](#图床软件推荐)，这里介绍如何设置本地图片的**相对路径引用**
 
-如下图，在全局图像设置里选择复制图片到`./${filename}.assets`文件夹，并且​勾选:heavy_check_mark:**优先使用相对路径**。这样设置之后，将图片拖进typora后，该图片会自动复制到与文章同目录下的`filename.asset`文件夹里(filename为文章的文件名，中英都可以，但英文需要**小写**)。
+如下图，在全局图像设置里选择复制图片到`./${filename}.assets`文件夹，并且​勾选:heavy_check_mark:**优先使用相对路径**。随后，将图片拖进typora中该图片会自动复制到与文章同目录下的`filename.asset`文件夹里(filename为文章的文件名，中英都可以，英文需**小写**)。
 
 ![typora setting](about-the-site.assets/typora setting.png)
 
 **将文章与存放图片的文件夹复制到博客**`content`**目录**
 
-在添加文章的部分提到了新增文章只需要将`.md`文件复制到博客的`content`目录下即可，如果你文中引用的图片或者其他任何资料都是网络资源（即引用URL）这样做是没问题的。
+在添加文章的部分提到了新增文章只需要将`.md`文件复制到博客的`content`目录下的相应目录即可，若文中引用的图片均来源于网络（即通过URL引用），那就只需要一个markdown文件。
 
 **若你引用了本地图片，需按照下面的步骤操作：**
 
-假设有一篇名为`share-r-code.md`的文章，且文章引用了本地图片，图片在文章同目录下的`share-r-code.assets`文件夹中。
+假设有一篇文件名为`share-r-code.md`的文章，且文中使用相对路径引用了本地图片，图片在文章同目录下的`share-r-code.assets`文件夹中。
 
-1. 将`share-r-code.md`文件复制到博客的`content\post\all`目录下
-2. 在`content\post\all`目录下**新建**一个名为`share-r-code`的文件夹
-3. 将`share-r-code.assets`文件夹复制到`share-r-code`文件夹下
+1. 将`share-r-code.md`文件复制到博客的`content\post\all`目录下（文章可以放在`content\post\ `文件夹下或子文件夹中）
+2. 在`share-r-code.md`所在目录**新建**一个名为`share-r-code`的文件夹
+3. 将`share-r-code.assets`文件夹复制到`share-r-code`文件夹里
 
-这样在生成博客文章时才能正确获取图片的路径
+**文件结构如下：**
+
+```shell
+content
+ └─post
+    └─all
+       │ share-r-code.md
+       │
+       └─share-r-code
+           └─share-r-code.assets
+                   fig1.png
+                   fig2.png
+```
+这样做的目的是为了在生成博客文章时能指向正确的图片路径
 
 ### 图床软件推荐
 
-图床即可储存图片的云端服务，使用图床就无需在本地储存`.md`文件中的图片，typora在mac端可以使用iPic这款软件，进行图片的上传。Win端也有一款相对比较好用的开源软件，[PicGo](<https://github.com/Molunerfinn/PicGo>)。
+图床即可储存图片的云端服务，使用图床后就无需在本地储存`.md`中的图片，typora在mac端可以配合iPic方便地进行图片的上传并自动生成**markdown**语句。Win端也有一款较好用的开源软件，[PicGo](<https://github.com/Molunerfinn/PicGo>)。
 
 PicGo目前支持：  
 - `微博图床` v1.0  
@@ -363,7 +395,7 @@ PicGo目前支持：
 - `阿里云OSS` v1.6.0  
 - `Imgur` v1.6.0
 
-推荐使用GitHub作为私人图床，免费且服务有保障。
+推荐使用**GitHub**作为私人图床，**免费**且有**保障**。
 
 具体方法设置方法见[官方文档](<https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A>)
 

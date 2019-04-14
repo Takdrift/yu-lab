@@ -36,7 +36,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   languageCode = "zh-cn"
 
 [author]                  # essential                     # 必需
-  name = "Shao"
+  name = "Yu Group"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -89,7 +89,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   customFooter = "ZJU Yu Group since 2008"
   
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  # moreMeta = true
+    moreMeta = true
    
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
