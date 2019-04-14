@@ -42,6 +42,14 @@ author: "Yu Group"  # 作者
 # 删除重复值 ---- by Si Shuting
 baseold<-baseold[!duplicated(baseold[,c(7)]),]  # 按某列相同删除
 ```
+## 分组计算均值 
+
+```R
+# 分组计算均值 ---- by Si Shuting
+library(psych)  
+myvars <- c("CA", "CU", "FE","MG","ZN","NL")
+describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
+```
 
 # 统计模型
 
