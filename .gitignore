@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-.exe
+*.exe
 public
 static/figures
 blogdown
