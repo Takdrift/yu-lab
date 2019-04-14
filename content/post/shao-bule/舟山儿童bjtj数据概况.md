@@ -21,13 +21,13 @@ author: "Shao"
 
 **图1. 儿童保健体检数据变量缺失情况（n=559564）**
 
-![bjtj_missing_var](舟山儿童bjtj数据概况.img/bjtj_missing_var.png)
+![bjtj_missing_var](舟山儿童bjtj数据概况.assets/bjtj_missing_var.png)
 
 将体检数据与fbeb(妇保儿保连接数据)合并后，能合并上djbh的数据有338795条，变量缺失情况如下：
 
 **图2. 体检数据合并djbh后变量缺失情况（n=338795）**
 
-![djbh_bjtj_missing_var](舟山儿童bjtj数据概况.img/djbh_bjtj_missing_var.png)
+![djbh_bjtj_missing_var](舟山儿童bjtj数据概况.assets/djbh_bjtj_missing_var.png)
 
 ## 合并DJBH后再合并专项档案
 
@@ -43,19 +43,19 @@ bjtj合并上zxda后计算随访日龄，根据日龄定义随访的月龄:arrow
 
 **图3. 随访年份分布（限定在2000-2018年）**
 
-![sf_year](舟山儿童bjtj数据概况.img/sf_year.png)
+![sf_year](舟山儿童bjtj数据概况.assets/sf_year.png)
 
 **图4. 随访月份分布**
 
-![sf_month](舟山儿童bjtj数据概况.img/sf_month.png)
+![sf_month](舟山儿童bjtj数据概况.assets/sf_month.png)
 
 **图5. 随访儿童月龄分布（剔除异常值后）**
 
-![sf_age](舟山儿童bjtj数据概况.img/sf_age.png)
+![sf_age](舟山儿童bjtj数据概况.assets/sf_age.png)
 
 **图6. 根据随访日龄定义随访月份**
 
-![sf_age_def](舟山儿童bjtj数据概况.img/sf_age_def.png)
+![sf_age_def](舟山儿童bjtj数据概况.assets/sf_age_def.png)
 
 ### 表1. 儿童随访月龄定义方法
 

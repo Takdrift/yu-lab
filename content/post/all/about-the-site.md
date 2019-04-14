@@ -314,11 +314,11 @@ You can create footnotes like this[^footnote].
 相当于**反转义**作用。使符号成为普通符号。
 #### 3.Markdown编辑器推荐
 
-上文已经提到了[*typora*](<https://typora.io/>)，市面上大部分**markdown**编辑器都是分栏显示，即左边显示源码，右边显示编译成`html`之后的文档，而*typora*有两种模式，一种是实时编译模式（即一边输入一边编译），一种是源码模式，二者可通过`Ctrl+/`进行切换。
+上文已经提到了[*typora*](<https://typora.io/>)，市面上大部分**markdown**编辑器都是分栏显示，即左边显示源码，右边显示编译成`html`之后的文档，而typora有两种模式，一种是实时编译模式（即一边输入一边编译），一种是源码模式，二者可通过`Ctrl+/`进行切换。
 
 ![typora typing](about-the-site.assets/typora typing.gif)
 
-*typora*的优点：
+typora的优点：
 
 - 实时编译模式，无分栏，充分享受宽屏输入
 - 大量快捷键，提高输入效率
@@ -331,17 +331,17 @@ You can create footnotes like this[^footnote].
 
 图床的使用见[下文](#图床软件推荐)，这里介绍一下如何设置本地图片的**相对路径引用**
 
-如下图，在全局图像设置里选择复制图片到`./${filename}.assets`文件夹，并且​勾选:heavy_check_mark:**优先使用相对路径**。这样设置之后，在写文章是，直接将了需要的图片拖进typora后，该图片会自动复制到与文章同目录下的`filename.asset`文件夹里(filename为文章的文件名，中英都可以，但英文只能**小写**)。
+如下图，在全局图像设置里选择复制图片到`./${filename}.assets`文件夹，并且​勾选:heavy_check_mark:**优先使用相对路径**。这样设置之后，将图片拖进typora后，该图片会自动复制到与文章同目录下的`filename.asset`文件夹里(filename为文章的文件名，中英都可以，但英文需要**小写**)。
 
 ![typora setting](about-the-site.assets/typora setting.png)
 
 **将文章与存放图片的文件夹复制到博客**`content`**目录**
 
-在添加文章的部分提到了新增文章只需要将`.md`文件复制到博客的content目录下即可，如果你文中引用的图片或者其他任何资料都是网络资源（即用URL引用）这样做是没问题的。
+在添加文章的部分提到了新增文章只需要将`.md`文件复制到博客的`content`目录下即可，如果你文中引用的图片或者其他任何资料都是网络资源（即引用URL）这样做是没问题的。
 
-**若你有引用本地图片，则需要按照下面的步骤操作：**
+**若你引用了本地图片，需按照下面的步骤操作：**
 
-假设现在有一篇名为`share-r-code.md`的文章，且文章有引用本地图片，图片在文章同目录下的`share-r-code.assets`文件夹中。
+假设有一篇名为`share-r-code.md`的文章，且文章引用了本地图片，图片在文章同目录下的`share-r-code.assets`文件夹中。
 
 1. 将`share-r-code.md`文件复制到博客的`content\post\all`目录下
 2. 在`content\post\all`目录下**新建**一个名为`share-r-code`的文件夹
