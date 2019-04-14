@@ -42,7 +42,7 @@ author: "Yu Group"  # 作者
 # 删除重复值 ---- by Si Shuting
 baseold<-baseold[!duplicated(baseold[,c(7)]),]  # 按某列相同删除
 ```
-## 删除重复值  
+## 分组计算均值 
 
 ```R
 # 分组计算均值 ---- by Si Shuting
