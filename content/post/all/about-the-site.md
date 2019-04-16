@@ -169,9 +169,15 @@ author: "Yu Group"  # 作者
 
 操作步骤如下：
 
-1. 待完善...
-2.  
-3. 
+![pr1](about-the-site.assets/pr1.png)
+
+
+
+首先，通过`Fetch origin` 获取云端各个`repo`的最新信息；
+
+然后，点击`current branch` 会显示目前各分支的最新状态，然后点击 `step 3` ，并在弹出的选项中选择需同步的源`repo`；此时下方会出现`This will 1 commit from.....`和`√`，表示可以合并此`repo`；
+
+最后，点击确认`merge`,此时页面中会出现蓝色框框，点击框框内的`pull origin`完成同步。
 
 ### Markdown篇
 
