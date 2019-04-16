@@ -61,7 +61,7 @@ author: "Shao"
    Hugo Static Site Generator v0.54.0-B1A82C61 windows/amd64 BuildDate: 2019-02-01T09:42:02Z
    ```
 
-### Github篇
+### GitHub篇
 
 [GitHub](<https://github.com/>)是一个托管软件源代码（具有版本控制功能）的网站，支持**多人协作**。2008年成立，2018年6月4日被微软以75亿美元收购。
 
@@ -71,7 +71,7 @@ author: "Shao"
 
 在开始操作之前，先来了解一下4个基本的GitHub概念，`repo`、`fork`、`push`和`pull`
 
-- `repo`即repository，指代码仓库，即你托管在Github上的项目（如本文中的**博客**）
+- `repo`即repository，指代码仓库，即你托管在GitHub上的项目（如本文中的**博客**）
 - `fork`指复制别人的`repo`
 - `push`指将本地的修改push到GitHub，可理解为**上传**
 - `pull`，准确地说`pull request`指申请**合并**修改（当你`fork`了别人的`repo`，然后修改或增加了内容，可通过`pull request`申请将你的修改合并至源`repo`）
@@ -80,7 +80,7 @@ author: "Shao"
 
 #### 1.Fork博客源repo
 
-登陆自己的Github账号，然后打开<https://github.com/Takdrift/yu-lab>，点击右上角的`Fork`按钮就可以把博客的源码复制到自己的代码仓库。
+登陆自己的GitHub账号，然后打开<https://github.com/Takdrift/yu-lab>，点击右上角的`Fork`按钮就可以把博客的源码复制到自己的代码仓库。
 
 ![fork](about-the-site.assets/fork.png)
 
@@ -171,13 +171,9 @@ author: "Yu Group"  # 作者
 
 ![pr1](about-the-site.assets/pr1.png)
 
-
-
-首先，通过`Fetch origin` 获取云端各个`repo`的最新信息；
-
-然后，点击`current branch` 会显示目前各分支的最新状态，然后点击 `step 3` ，并在弹出的选项中选择需同步的源`repo`；此时下方会出现`This will 1 commit from.....`和`√`，表示可以合并此`repo`；
-
-最后，点击确认`merge`,此时页面中会出现蓝色框框，点击框框内的`pull origin`完成同步。
+1. 点击`Fetch origin` 获取云端各个`repo`的最新状态
+2. 点击`Current branch` 后点击`Choose a branch to merge into master`，并在弹出的窗口中选择需同步的源`repo`（一般为**upstream/master**），若源repo有更新，在下方会显示**This will merge...**，点击下方的`Merge upstream/master into master`就完成了本地与源`repo`的同步
+3. 此时会显示`push origin`（**Ctrl+P**）按钮，点击即可完成本地与自己GitHub中`repo`的同步
 
 ### Markdown篇
 
