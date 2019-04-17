@@ -375,7 +375,6 @@ content
  └─post
     └─all
        │ share-r-code.md
-       │
        └─share-r-code
            └─share-r-code.assets
                    fig1.png
