@@ -4,5 +4,4 @@
 .Ruserdata
 *.exe
 public
-static/figures
 blogdown
