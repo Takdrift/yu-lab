@@ -47,17 +47,17 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 在插入一张宽度小于网页宽度的图片时图片是自动**向左对齐**的，比如：
 
 ```markdown
-![black hole](http://t.cn/Ea3vfXb)
+![black hole](https://t.cn/Ea3vfXb)
 ```
 
 :point_down:效果:point_down:
 
-![black hole](http://t.cn/Ea3vfXb)
+![black hole](https://t.cn/Ea3vfXb)
 
 **若想使图片居中目前能通过html语法实现，具体语法如下​**:point_down:
 
 ```html
-<div align=center><img src="http://t.cn/Ea3vfXb" alt="black hole"/></div>
+<div align=center><img src="https://t.cn/Ea3vfXb" alt="black hole"/></div>
 ```
 
 **语法注释：**
@@ -67,12 +67,12 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 
 <div align=center><p>:point_down:效果:point_down:</p></div>
 
-<div align=center><img src="http://t.cn/Ea3vfXb" alt="black hole"/></div>
+<div align=center><img src="https://t.cn/Ea3vfXb" alt="black hole"/></div>
 
 还能通过`width`和`height`设置**固定尺寸**:point_down:
 
 ```html
-<div align=center><img src="http://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
+<div align=center><img src="https://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
 ```
 
 **Tips:**
@@ -80,4 +80,4 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 - `width`与`height`只设置其一则会自动等比缩放，若两者都设置则**hugo**会以`width`为准进行缩放而忽略`height`，而**typora**会根据两者具体值进行缩放
 - `width`还可以用**百分比**设置，如`width="50%"`
 
-<div align=center><img src="http://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
+<div align=center><img src="https://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
