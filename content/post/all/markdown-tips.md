@@ -81,3 +81,28 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 - `width`还可以用**百分比**设置，如`width="50%"`
 
 <div align=center><img src="https://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
+
+### excel表格导出为图片
+
+因为在markdown中对表格进行排版（缩进、合并单元格）需要使用`html`语言，该方法的可重复性不高，且需要一定`html`语言知识。所以性价比相对较高的解决方案是将excel中的表格转为图片然后插入到文档中，方法有如下几种：
+
+1. 将excel中的表格`复制`:point_right:`粘贴为图片`生成图片
+2. 使用[XL Toolbox](https://www.xltoolbox.net/)插件导出图片（推荐使用），可设置参数
+
+| Variables      | DPI     | Width  | Pixel      |
+| -------------- | ------- | ------ | ---------- |
+| XL Toolbox设置 | 300 dpi | 171 pt | width: 712 |
+| XL Toolbox设置 | 301 dpi | 170 pt | width: 713 |
+
+:point_up:上面是markdown生成的表格(**文本**)  
+
+:point_down:下面是通过设置excel表格主题模拟`Jane`主题下的表格（通过**XL Toolbox**导出）
+
+![XLtools parameter](https://raw.githubusercontent.com/Takdrift/pic-repo/master/XLtools%20para1.png)
+
+> **Tips:** 
+>
+> - 网页默认显示的图片宽度约为`714px`，宽大于`714px`的图片会被缩至`714px`
+> - 上表的**Pixel**表示在**XL Toolbox**中设置相应DPI跟Width参数后导出图片宽度的`px`
+> - 字体：10号`Source Sans Pro`
+

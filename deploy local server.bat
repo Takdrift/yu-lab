@@ -1,5 +1,5 @@
 @ECHO # deploy local server
 
-hugo server
+hugo server -D
 
 pause
