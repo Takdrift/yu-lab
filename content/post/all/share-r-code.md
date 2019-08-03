@@ -70,7 +70,9 @@ describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
 
 # 数据可视化
 
-## [画地图](/post/si-shuting/用r绘制地图/)
+## [静态地图](/post/si-shuting/用r绘制地图/)
+
+## [交互式地图](/post/shao-bule/用r绘制交互式地图/)
 
 # 统计模型
 
