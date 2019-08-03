@@ -1,5 +1,5 @@
 @ECHO # deploy local server
 
-hugo server -D
+hugo server # -D will deploy draft
 
 pause
