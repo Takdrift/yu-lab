@@ -12,7 +12,7 @@ author: "Si Shuting"  # 作者
 
 
 
-## Method1. 使用`ggplot`绘制
+## Method 1. 使用`ggplot`绘制
 
 准备工作，当然先得拥有绘制地图的数据啦，一般多采用`GIS`的数据~，还有在[GADM](<https://gadm.org/download_country_v3.html>)也有世界各地的地图数据（不过我下载后没能成功读入R中，大家可以再试试哈），本文绘图采用的`GIS`的数据。
 
