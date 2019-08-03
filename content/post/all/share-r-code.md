@@ -24,11 +24,11 @@ author: "Yu Group"  # 作者
 
    - ```markdown
      ​```R
-     # 代码用途 ---- by Author
+     # 代码用途 by Author---- 
      ​```
      ```
 
-   - **注：第一行注释在输入完用途后输入4个**`-`**再添加作者信息（这样复制到Rstudio中可以生成标题）**
+   - **注：第一行注释完后输入4个**`-`**（这样复制到Rstudio中可以生成标题）**
 
 3. 第二行开始具体代码的书写，尽量选择R**自带数据**(如`mtcars`)进行演示，若数据格式不同，需提供具体演示数据（目的是为了让别人可重复结果）
 
@@ -43,7 +43,7 @@ author: "Yu Group"  # 作者
 ```markdown
 ## 代码用途
 ​```R
-# 代码用途 ---- by Author
+# 代码用途 by Author----
 R code
 # 注释为独立一行时，输入#后空1格再进行注释
 R code  # 紧接代码的注释在代码后空2格，输入#后空1格再进行注释
@@ -56,13 +56,13 @@ R code  # 紧接代码的注释在代码后空2格，输入#后空1格再进行�
 ## 删除重复值
 
 ```R
-# 删除重复值 ---- by Si Shuting
+# 删除重复值 by Si Shuting----
 baseold<-baseold[!duplicated(baseold[,c(7)]),]  # 按某列相同删除
 ```
 ## 分组计算均值 
 
 ```R
-# 分组计算均值 ---- by Si Shuting
+# 分组计算均值 by Si Shuting---- 
 library(psych)  
 myvars <- c("CA", "CU", "FE","MG","ZN","NL")
 describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
@@ -79,7 +79,7 @@ describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
 某些需要用到google服务的包需要**科学上网**才能正常使用，故可通过以下方式在**Rstudio**中设置代理
 
 ```R
-# 代理设置 ---- by Shao Bule
+# 代理设置 by Shao Bule----
 file.edit('~/.Renviron')  # 打开并编辑环境配置文件
 
 # 打开后粘贴以下文本设置代理 line 5-line 12

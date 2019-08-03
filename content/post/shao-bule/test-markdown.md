@@ -7,7 +7,7 @@ draft: true  # =true为草稿，不会生成相应的网页，!!!需要改为fal
 
 # keywords, tags, categories都可以设置多个，中间需要用英文逗号(,)隔开
 keywords: []  # 关键字
-tags: []  # 标签，会将此文章添加到相应的标签下（建议查看既往的标签，防止相同含义的不同标签）
+tags: [TEST]  # 标签，会将此文章添加到相应的标签下（建议查看既往的标签，防止相同含义的不同标签）
 categories: []  # 分类，会将此文章添加到指定的分类下（建议使用各自的姓名，且只设置一个分类）
 author: ""  # 作者，会显示在文末
 ---
@@ -17,4 +17,6 @@ author: ""  # 作者，会显示在文末
 
 
 <Iframe src="/post/shao-bule/vitamin d and SNPs.svg";  width="1000" height"2000" scrolling="yes" frameborder="0"></iframe>
+
+
 

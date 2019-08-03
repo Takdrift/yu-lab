@@ -4,7 +4,7 @@
 
 baseURL = "" # http://localhost:1313/ 发布到服务器时修改为 http://10.71.206.64/ or use 'hugo -b http://10.71.206.64/'
 title = "Yu Group"
-enableRobotsTXT = true
+enableRobotsTXT = false # 不自动生成robots.txt
 enableEmoji = true
 theme = "jane"
 
