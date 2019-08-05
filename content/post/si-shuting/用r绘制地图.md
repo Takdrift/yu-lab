@@ -4,9 +4,9 @@ date: 2019-08-03  # 创建日期
 lastmod: 2019-08-03  # 最后修改日期
 draft: false  # =true为草稿，不会生成相应的网页
 #slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
-keywords: [R, 学习资料]  # 关键字
-tags: [R, 学习资料]  # 标签，会将此文章添加到指定的标签下
-categories: [R, 学习资料]  # 分类，会将此文章添加到指定的分类下
+keywords: [R, 地图, ggplot]  # 关键字
+tags: [R, 地图]  # 标签，会将此文章添加到指定的标签下
+categories: [R, 斯淑婷]  # 分类，会将此文章添加到指定的分类下
 author: "Si Shuting"  # 作者
 ---
 

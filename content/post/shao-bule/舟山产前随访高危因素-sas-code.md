@@ -5,8 +5,8 @@ lastmod: 2019-04-10
 draft: false
 keywords: [舟山, 高危因素, SAS code]
 tags: [舟山, 高危因素, SAS code]
-categories: [邵, SAS code]
-author: "Shao"
+categories: [邵布勒]
+author: "邵布勒"
 ---
 
 # 产前随访文本信息提取

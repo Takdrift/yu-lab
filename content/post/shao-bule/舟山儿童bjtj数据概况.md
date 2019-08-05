@@ -5,9 +5,9 @@ lastmod: 2019-03-28
 draft: false
 #slug: "zs-eb-bjtj"
 keywords: [舟山, 保健体检]
-tags: [舟山, 保健体检, 组会]
-categories: [邵, 数据概况]
-author: "Shao"
+tags: [舟山, 保健体检]
+categories: [邵布勒]
+author: "邵布勒"
 ---
 
 # 舟山儿童保健体检数据概况

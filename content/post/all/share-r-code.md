@@ -12,7 +12,7 @@ author: "Yu Group"  # 作者
 
 # 前言
 
-在这里，你可以分享你认为实用的R code，可以涉及**数据处理**、**数据可视化**、**统计模型**等。这样在为自己做笔记的同时也可以帮助到新人，同时大家也能互相学习。
+在这里，你可以分享你认为实用的R code，可涉及**[数据处理](#数据处理)**、**[数据可视化](#数据可视化)**、**[统计模型](#统计模型)**等。在为自己做笔记的同时也可以帮助到别人。
 
 下面会介绍R code的书写规范，如果你还不知道怎么使用这个博客系统，:point_right:[戳这里](/post/all/about-the-site)。
 
@@ -28,15 +28,13 @@ author: "Yu Group"  # 作者
      ​```
      ```
 
-   - **注：第一行注释完后输入4个**`-`**（这样复制到Rstudio中可以生成标题）**
+   - **注：第一行注释完后输入4个或以上**`-`**（这样复制到Rstudio中可以生成标题）**
 
 3. 第二行开始具体代码的书写，尽量选择R**自带数据**(如`mtcars`)进行演示，若数据格式不同，需提供具体演示数据（目的是为了让别人可重复结果）
 
-4. 对每一步进行注释，注释若是独立的一行则在**行首**输入`#`后**空1格**，然后开始注释，若注释紧接代码后面，**先空2格**，`#`，然后**空1格**进行注释。推荐阅读：[R代码书写规范](<https://google.github.io/styleguide/Rguide.xml>)）
+4. 对每一步进行注释，注释若是独立的一行则在**行首**输入`#`后**空1格**，然后开始注释，若注释紧接代码后面，**先空2格**，`#`，然后**空1格**进行注释。推荐阅读：[R代码书写规范](<https://google.github.io/styleguide/Rguide.xml>)）  
 
-目前分为**数据处理**、**统计模型**、**数据可视化**和**其他设置**四个板块（为**一级标题**），后续可逐渐增加  
-
-- 每个示例可添加相应的**二级标题**，以便于通过目录查看
+:bulb: 每个示例可添加相应的**二级标题**，便于在网页上通过目录查看（网页右上角--`Jane`主题）
 
 **Markdown语言如下：**
 
@@ -57,7 +55,7 @@ R code  # 紧接代码的注释在代码后空2格，输入#后空1格再进行�
 
 ```R
 # 删除重复值 by Si Shuting----
-baseold<-baseold[!duplicated(baseold[,c(7)]),]  # 按某列相同删除
+baseold<-baseold[!duplicated(baseold[, c(7)]),]  # 按某列相同删除
 ```
 ## 分组计算均值 
 
@@ -68,11 +66,28 @@ myvars <- c("CA", "CU", "FE","MG","ZN","NL")
 describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
 ```
 
+## List转data.frame
+
+```R
+# 将list转为data.frame By Shao----
+library(dplyr)  # 转换用到的bind_rows函数属于dplyr包
+
+# 生成list数据
+list1 <- list(x = c('A', 'B', 'C', 'D'), y = c(1, 2, 3, 4))
+list2 <- list(x = c('X', 'Y', 'Z'), y = c(24, 25, 26))
+
+df <- bind_rows(list1, list2) # List转为数据框
+```
+
+
+
 # 数据可视化
 
 ## [静态地图](/post/si-shuting/用r绘制地图/)
 
 ## [交互式地图](/post/shao-bule/用r绘制交互式地图/)
+
+## [GIF](/post/shao-bule/用gganimate制作动图/)
 
 # 统计模型
 
@@ -80,7 +95,7 @@ describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
 
 ## 代理设置
 
-某些需要用到google服务的包需要**科学上网**才能正常使用，故可通过以下方式在**Rstudio**中设置代理
+某些需要**科学上网**才能正常使用的包可通过以下方式在**Rstudio**中设置代理（设置完后需重启`R`）
 
 ```R
 # 代理设置 by Shao Bule----
@@ -89,12 +104,12 @@ file.edit('~/.Renviron')  # 打开并编辑环境配置文件
 # 打开后粘贴以下文本设置代理 line 5-line 12
 options(internet.info = 0)
 
-http_proxy="http://your_proxy:your_port"  # 输入代理IP和端口
-# http_proxy_user=user:passwd  # 如果没有用户名和密码将这行注释掉
+http_proxy = "http://your_proxy:your_port"  # 输入代理IP和端口
+# http_proxy_user = user:passwd  # 如果没有用户名和密码将这行注释掉
 
 # 注意：https_proxy里不能写https://...仍然用http://
-https_proxy="http://your_proxy:your_port"  # 输入代理IP和端口
-# http_proxy_user=user:passwd  # 如果没有用户名和密码将这行注释掉
+https_proxy = "http://your_proxy:your_port"  # 输入代理IP和端口
+# http_proxy_user = user:passwd  # 如果没有用户名和密码将这行注释掉
 
 Sys.getenv("http_proxy")  # 查看代理信息
 Sys.getenv("https_proxy")  # 查看代理信息

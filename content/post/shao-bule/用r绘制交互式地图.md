@@ -6,7 +6,7 @@ draft: false  # =true为草稿，不会生成相应的网页
 #slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
 keywords: [R, 学习资料, Leaflet]  # 关键字
 tags: [R, 地图, Leaflet]  # 标签，会将此文章添加到指定的标签下
-categories: [R, 学习资料]  # 分类，会将此文章添加到指定的分类下
+categories: [邵布勒, R]  # 分类，会将此文章添加到指定的分类下
 author: "邵布勒"  # 作者
 ---
 
@@ -20,7 +20,7 @@ author: "邵布勒"  # 作者
 
 # 地图数据
 
-地图绘制需要用到`GIS`的数据，具体见斯斯同学写的[《用R绘制静态地图》](/post/si-shuting/用r绘制地图/)的文章，或[点击下载GIS数据](https://uploads.cosx.org/2009/07/chinaprovinceborderdata_tar_gz.zip)。
+地图绘制需要用到`GIS`的数据，具体见[斯斯](/categories/斯淑婷/)同学写的[《用R绘制静态地图》](/post/si-shuting/用r绘制地图/)的文章，或[点击下载GIS数据](https://uploads.cosx.org/2009/07/chinaprovinceborderdata_tar_gz.zip)。
 
 下载完毕后解压出bou2_4p.dbf、**bou2_4p.shp** 和 bou2_4p.shx三个文件（后续会用到bou2_4p.shp文件）
 
@@ -39,7 +39,7 @@ library(leaflet)
 map <- readOGR("C:/bou2_4p.shp")  # 导入GIS数据
 
 # 读取需要绘制的数据并合并至map
-tp <- read.csv("C:/temperature.csv")  # 具体数据见下面表格
+tp <- read.csv("https://raw.githubusercontent.com/Takdrift/pic-repo/master/temperature.csv")
 map2 <- merge(map, tp, by = "NAME") 
 
 # 设置鼠标点击后显示的内容
@@ -67,47 +67,4 @@ leaflet(map2) %>%
 <div align=center><sub>鼠标点击会显示具体数据</sub></div>
 
  <Iframe src="/webpage/map-temperature.html"; 
-        width="600" height="600" scrolling="no" frameborder="0"></iframe>
-
-
-
-# 气温数据
-
-**本例子作图所用的气温数据如下**（复制至Excel保存为csv文件即可）
-
-| NAME             | Temparature |
-| ---------------- | ----------- |
-| 北京市           | 37          |
-| 重庆市           | 40          |
-| 福建省           | 38          |
-| 广东省           | 35          |
-| 广西壮族自治区   | 34          |
-| 黑龙江省         | 36          |
-| 河南省           | 32          |
-| 湖北省           | 34          |
-| 江西省           | 32          |
-| 吉林省           | 31          |
-| 上海市           | 37          |
-| 天津市           | 36          |
-| 新疆维吾尔自治区 | 41          |
-| 浙江省           | 36          |
-| 安徽省           | 35          |
-| 甘肃省           | 33          |
-| 贵州省           | 32          |
-| 海南省           | 33          |
-| 河北省           | 35          |
-| 湖南省           | 33          |
-| 江苏省           | 37          |
-| 辽宁省           | 36          |
-| 内蒙古自治区     | 35          |
-| 宁夏回族自治区   | 32          |
-| 青海省           | 32          |
-| 山东省           | 34          |
-| 山西省           | 36          |
-| 陕西省           | 30          |
-| 四川省           | 30          |
-| 台湾省           | 32          |
-| 西藏自治区       | 28          |
-| 香港特别行政区   | 34          |
-| 云南省           | 28          |
-
+        width="620" height="650" scrolling="no" frameborder="0"></iframe>
