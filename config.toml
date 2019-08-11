@@ -79,6 +79,10 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   #keywords = ["Hugo", "theme","jane"]
   #description = "Hugo theme jane example site."
 
+    [params.search.google]    # google custom search, see https://cse.google.com
+    enable = true
+    id = "006009518424030812477:ydcrnhruej8"
+  
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
 
