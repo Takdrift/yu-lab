@@ -12,11 +12,11 @@ author: "Yu Group"  # 作者
 
 # 前言
 
-在这里，你可以分享你认为实用的R code，可涉及**[数据处理](#数据处理)**、**[数据可视化](#数据可视化)**、**[统计模型](#统计模型)**等。在为自己做笔记的同时也可以帮助到别人。
+在这里，你可以分享你认为实用的R code，可涉及**[数据处理](#数据处理)**、**[数据可视化](#数据可视化)**、**[统计模型](#统计模型)**等，在为自己做笔记的同时也可以帮助到别人。
 
-下面会介绍R code的书写规范，如果你还不知道怎么使用这个博客系统，:point_right:[戳这里](/post/all/about-the-site)。
+下面介绍R code的范例与代码书写规范，如果你还不知道怎么使用这个博客系统，:point_right:[戳这里](/post/all/about-the-site)。
 
-**R code示例书写规范：**
+**R code范例：**
 
 1. 先用二级标题注明代码用途`## 代码用途`
 
@@ -32,7 +32,9 @@ author: "Yu Group"  # 作者
 
 3. 第二行开始具体代码的书写，尽量选择R**自带数据**(如`mtcars`)进行演示，若数据格式不同，需提供具体演示数据（目的是为了让别人可重复结果）
 
-4. 对每一步进行注释，注释若是独立的一行则在**行首**输入`#`后**空1格**，然后开始注释，若注释紧接代码后面，**先空2格**，`#`，然后**空1格**进行注释。推荐阅读：[R代码书写规范](<https://google.github.io/styleguide/Rguide.xml>)）  
+4. 对每一步进行注释  
+
+   
 
 :bulb: 每个示例可添加相应的**二级标题**，便于在网页上通过目录查看（网页右上角--`Jane`主题）
 
@@ -48,6 +50,16 @@ R code  # 紧接代码的注释在代码后空2格，输入#后空1格再进行�
 ​```
 ```
 
+## 代码书写规范
+
+下面总结几点比较重要的代码书写规范，具体见[Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)和 [Tidyverse Style Guide](https://style.tidyverse.org/)(推荐后者)
+
+1. 变量名与函数名使用**小写字母**、数字与`_`（同文件命名），变量名使用**名词**，函数名使用**动词**。
+2. 每行不超过**80**个字符。
+3. 代码缩进时使用**2个空格**，**不**使用`Tab`键。
+4. `=`, `+`, `-`, `<-`这些符号两边都需要有**1个空格**。
+5. 用`<-`而**不要**使用`=`赋值
+7. 注释若是独立的一行则在**行首**输入`#`后**空1格**，然后开始注释；若注释紧接代码后面，**先空2格**，`#`，然后**空1格**进行注释。
 
 # 数据处理
 
@@ -66,7 +78,7 @@ myvars <- c("CA", "CU", "FE","MG","ZN","NL")
 describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
 ```
 
-## List转data.frame
+## list转data.frame
 
 ```R
 # 将list转为data.frame By Shao----
@@ -91,7 +103,41 @@ df <- bind_rows(list1, list2) # List转为数据框
 
 # 统计模型
 
-# 其他设置
+# 其他
+
+## 代码整理
+
+自动整理R代码的包`formatR`，可以将不规范的代码转换为规范的书写格式，formatR:point_right:[主页](https://yihui.name/formatR)
+
+```R
+tidy_source(width.cutoff = 50)  # 将剪切板上的代码自动整理， width.cutoff为每行字符数
+```
+
+Two applications of `tidy_source()`:
+
+- `tidy_dir()` can reformat all R scripts under a directory
+- `usage()` can reformat the usage of a function, e.g. compare `usage()` with the default output of `args()`:
+
+`usage()`相较于`args()`可以更多样化地输出函数的完整语句同参数，见下面的例子
+
+```R
+library(formatR)
+usage(glm, width = 40)  # can set arbitrary width here
+## glm(formula, family = gaussian, data,
+##     weights, subset, na.action,
+##     start = NULL, etastart, mustart,
+##     offset, control = list(...),
+##     model = TRUE, method = "glm.fit",
+##     x = FALSE, y = TRUE,
+##     singular.ok = TRUE,
+##     contrasts = NULL, ...)
+args(glm)
+## function (formula, family = gaussian, data, weights, subset, 
+##     na.action, start = NULL, etastart, mustart, offset, control = list(...), 
+##     model = TRUE, method = "glm.fit", x = FALSE, y = TRUE, singular.ok = TRUE, 
+##     contrasts = NULL, ...) 
+## NULL
+```
 
 ## 代理设置
 

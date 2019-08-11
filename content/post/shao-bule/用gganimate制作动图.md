@@ -149,4 +149,4 @@ anim_save("C:/DATA/PhD/R/地图作图-数据/GDP-map-8fps-20s.gif")
 
 ![](https://raw.githubusercontent.com/Takdrift/pic-repo/master/GDP-map-8fps-20s.gif)
 
-
+ 
