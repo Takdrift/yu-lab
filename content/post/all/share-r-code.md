@@ -20,35 +20,25 @@ author: "Yu Group"  # 作者
 
 1. 先用二级标题注明代码用途`## 代码用途`
 
-2. 如下输入**```R**开始代码书写，第一行用注释说明R code的**用途**及**作者**
+2. 如下输入**```R**开始代码书写，第一行用注释说明R code的**用途**及**作者**  
 
-   - ```markdown
-     ​```R
-     # 代码用途 by Author---- 
-     ​```
-     ```
+   ~~~markdown
+   ```R
+   # 代码用途 by Author---- 
+   ```
+   ~~~
 
-   - **注：第一行注释完后输入4个或以上**`-`**（这样复制到Rstudio中可以生成标题）**
+   **注：第一行注释完后输入4个或以上**`-`**（这样复制到Rstudio中可以生成标题）**
 
-3. 第二行开始具体代码的书写，尽量选择R**自带数据**(如`mtcars`)进行演示，若数据格式不同，需提供具体演示数据（目的是为了让别人可重复结果）
+3. 第二行开始具体代码的书写，尽量选择R**自带数据**(如`mtcars`)进行演示，或提供具体演示数据（目的是为了让别人可重复结果） 
 
-4. 对每一步进行注释  
+4. 对每一步进行注释
 
-   
 
-:bulb: 每个示例可添加相应的**二级标题**，便于在网页上通过目录查看（网页右上角--`Jane`主题）
 
-**Markdown语言如下：**
+:bulb: 每个示例可添加相应的**二级标题**，便于在网页上通过目录查看。  
 
-```markdown
-## 代码用途
-​```R
-# 代码用途 by Author----
-R code
-# 注释为独立一行时，输入#后空1格再进行注释
-R code  # 紧接代码的注释在代码后空2格，输入#后空1格再进行注释
-​```
-```
+
 
 ## 代码书写规范
 
@@ -64,18 +54,18 @@ R code  # 紧接代码的注释在代码后空2格，输入#后空1格再进行�
 # 数据处理
 
 ## 删除重复值
-
 ```R
 # 删除重复值 by Si Shuting----
 baseold<-baseold[!duplicated(baseold[, c(7)]),]  # 按某列相同删除
 ```
+
 ## 分组计算均值 
 
 ```R
 # 分组计算均值 by Si Shuting---- 
 library(psych)  
 myvars <- c("CA", "CU", "FE","MG","ZN","NL")
-describeBy(NEBWL120[myvars], list(NEBWL120$性别)) #按性别分组描述myvars
+describeBy(NEBWL120[myvars], list(NEBWL120$性别))  # 按性别分组描述myvars
 ```
 
 ## list转data.frame
@@ -160,4 +150,3 @@ https_proxy = "http://your_proxy:your_port"  # 输入代理IP和端口
 Sys.getenv("http_proxy")  # 查看代理信息
 Sys.getenv("https_proxy")  # 查看代理信息
 ```
-
