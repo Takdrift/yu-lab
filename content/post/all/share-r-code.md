@@ -85,6 +85,26 @@ df <- bind_rows(list1, list2) # List转为数据框
 
 # 数据可视化
 
+## ggpubr
+
+[ggpubr: Publication Ready Plots](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/)
+
+ggpubr Key features:
+
+- Wrapper around the **ggplot2** package with a **less opaque syntax** for beginners in R programming.
+- Helps researchers, with non-advanced R programming skills, to create easily **publication-ready plots**.
+- Makes it possible to automatically **add p-values and significance levels** to box plots, bar plots, line plots, and more.
+- Makes it easy to **arrange and annotate multiple plots** on the same page.
+- Makes it easy to **change grahical parameters** such as colors and labels.
+
+## ggarrange拼图  
+
+[ggplot2 - Easy Way to Mix Multiple Graphs on The Same Page](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/81-ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page/)
+
+example:
+
+![ggarrange](http://www.sthda.com/english/sthda-upload/images/ggpubr/arrange-multiple-ggplots.png)
+
 ## [静态地图](/post/si-shuting/用r绘制地图/)
 
 ## [交互式地图](/post/shao-bule/用r绘制交互式地图/)
