@@ -63,6 +63,11 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   weight = 40
   identifier = "categories"
   url = "/categories/"
+[[menu.main]]
+  name = "Yu盘"
+  weight = 50
+  identifier = "drive"
+  url = "http://drive.zjulab.org/"  
 #[[menu.main]]
 #  name = "external-link"
 #  weight = 50
