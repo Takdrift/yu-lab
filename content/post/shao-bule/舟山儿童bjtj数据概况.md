@@ -6,8 +6,8 @@ draft: false
 #slug: "zs-eb-bjtj"
 keywords: [舟山, 保健体检]
 tags: [舟山, 保健体检]
-categories: [邵布勒]
-author: "邵布勒"
+categories: [Shao Bule]
+author: "Shao Bule"
 ---
 
 # 舟山儿童保健体检数据概况

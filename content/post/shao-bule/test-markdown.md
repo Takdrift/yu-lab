@@ -14,7 +14,26 @@ author: ""  # 作者，会显示在文末
 
 # Test
 
-fail?
+## SVG embed
 
-<Iframe src="/post/shao-bule/vitamin d and SNPs.svg";  width="1000" height"2000" scrolling="yes" frameborder="0"></iframe>
+### Method 1[^svg1]
+
+{{< figure src="/post/shao-bule/vitamin d and SNPs.svg" >}}
+
+### Method 2[^svg2]
+
+```markdown
+![](https://raw.githubusercontent.com/Takdrift/pic-repo/master/vitamin%20d%20and%20SNPs.svg?sanitize=true)
+```
+
+![](https://raw.githubusercontent.com/Takdrift/pic-repo/master/vitamin%20d%20and%20SNPs.svg?sanitize=true)
+
+```markdown
+<img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/vitamin%20d%20and%20SNPs.svg?sanitize=true">
+```
+
+<img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/vitamin%20d%20and%20SNPs.svg?sanitize=true">
+
+[^svg1]: https://discourse.gohugo.io/t/embedding-inline-svg-in-content-markdown/7511/9
+[^svg2]: https://stackoverflow.com/questions/13808020/include-an-svg-hosted-on-github-in-markdown
 

@@ -5,8 +5,8 @@ lastmod: 2019-04-10
 draft: false
 keywords: [舟山, 儿保, SAS code]
 tags: [舟山, 儿保, SAS code]
-categories: [邵布勒]
-author: "邵布勒"
+categories: [Shao Bule]
+author: "Shao Bule"
 ---
 
 以下为儿童保健体检（`eb_bjtj`）数据概况展示的相关SAS code

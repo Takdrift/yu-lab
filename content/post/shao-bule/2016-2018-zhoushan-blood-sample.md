@@ -5,8 +5,8 @@ lastmod: 2019-03-28
 draft: false
 keywords: [舟山, 血样]
 tags: [舟山, 血样, 数据概况]
-categories: [邵布勒]
-author: "邵布勒"
+categories: [Shao Bule]
+author: "Shao Bule"
 ---
 
 # 舟山血样情况
@@ -222,7 +222,6 @@ author: "邵布勒"
 ## 六. 其他疾病信息
 
 <Iframe src="2016-2018-zhoushan-blood-sample.assets/wordcloud";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
-
 ### 图6.1 孕期高危因素情况
 
 ![riskname](2016-2018-zhoushan-blood-sample.assets/riskname.png)
@@ -230,7 +229,6 @@ author: "邵布勒"
 ### 全部舟山孕妇产前随访高危因素分布情况（n=84260）
 
 <Iframe src="2016-2018-zhoushan-blood-sample.assets/wordcloud_all_data";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
-
 **图6.2 舟山孕妇产前随访高危因素分布(n=84260)**
 
 ![riskname_all_data](2016-2018-zhoushan-blood-sample.assets/riskname_all_data.png)
@@ -254,7 +252,6 @@ GDM分级：
 ### 表6.1 母婴结局（n=5465）
 
 <div align=center><img src="2016-2018-zhoushan-blood-sample.assets/母婴结局.png"/></div>
-
 > 5508人中5465人可合并上分娩数据（fmdj和xsedj数据），其中43人有两次不同的出生体重记录（应该为**双胞胎**）
 
 ### 表6.2 母婴结局（是否有孕早期VD）

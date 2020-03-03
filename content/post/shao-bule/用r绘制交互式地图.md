@@ -6,8 +6,8 @@ draft: false  # =true为草稿，不会生成相应的网页
 #slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
 keywords: [R, 学习资料, Leaflet]  # 关键字
 tags: [R, 地图, Leaflet]  # 标签，会将此文章添加到指定的标签下
-categories: [邵布勒, R]  # 分类，会将此文章添加到指定的分类下
-author: "邵布勒"  # 作者
+categories: [Shao Bule, R]  # 分类，会将此文章添加到指定的分类下
+author: "Shao Bule"  # 作者
 ---
 
 # 前言
@@ -63,8 +63,6 @@ leaflet(map2) %>%
 
 
 <div align=center><b>:point_down:最终效果:point_down:</b></div>
-
 <div align=center><sub>鼠标点击会显示具体数据</sub></div>
-
  <Iframe src="/webpage/map-temperature.html"; 
         width="620" height="650" scrolling="no" frameborder="0"></iframe>
