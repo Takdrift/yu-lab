@@ -34,6 +34,9 @@ author: ""  # 作者，会显示在文末
 
 <img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/vitamin%20d%20and%20SNPs.svg?sanitize=true">
 
+<Iframe src="https://www.baidu.com/s?wd=550001148021849"; 
+width="300" height="800" scrolling="yes" frameborder="0"></iframe>
+
 [^svg1]: https://discourse.gohugo.io/t/embedding-inline-svg-in-content-markdown/7511/9
 [^svg2]: https://stackoverflow.com/questions/13808020/include-an-svg-hosted-on-github-in-markdown
 
