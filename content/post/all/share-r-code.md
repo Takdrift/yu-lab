@@ -1,7 +1,7 @@
 ---
 title: "R code分享"  # 文章标题，在网也中显示的标题
 date: 2019-04-13  # 创建日期
-lastmod: 2019-04-14  # 最后修改日期
+lastmod: 2019-11-22  # 最后修改日期
 draft: false  # =true为草稿，不会生成相应的网页
 #slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
 keywords: [R, 学习资料]  # 关键字
@@ -110,6 +110,8 @@ example:
 ## [交互式地图](/post/shao-bule/用r绘制交互式地图/)
 
 ## [GIF](/post/shao-bule/用gganimate制作动图/)
+
+## [data mining with R](/post/zhou-haibo/data_mining_with_R)
 
 # 统计模型
 
