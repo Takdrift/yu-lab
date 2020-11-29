@@ -1,3 +1,15 @@
+---
+title: "data_mining_with_R"
+data: 2020-11-28
+lastmod: 2020-11-29
+draft: false
+keywords: [测试]
+tags: [R]
+categories: [Zhou Haibo]
+author: "Zhou Haibo"
+---
+
+
 # 1,25(OH)2 vitamin d inhibits foam cell formation and suppresses macrophage cholesterol uptake in patients with type 2 diabetes mellitus（Test）
 
 ![](https://raw.githubusercontent.com/Kingsman-Key/Typora-picture/typora/image-20201128135711836.png)
