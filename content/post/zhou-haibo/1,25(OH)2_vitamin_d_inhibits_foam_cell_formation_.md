@@ -36,6 +36,8 @@ author: "Zhou Haibo"
 
 ![](https://raw.githubusercontent.com/Kingsman-Key/Typora-picture/typora/image-20201128153116993.png)
 
+A组是VD缺乏的糖尿病 C组肥胖导致VD缺乏的非糖尿病群体
+
 为了测定VD状态对于巨噬细胞的影响，给予LDL受体敲除的纯合子小鼠十周VD缺乏活不足的高脂饮食。VD摄入不足和缺乏的小鼠有着相似的血清胆固醇（1117±56 vs 1244±73毫克/分升; P = 0.2）和甘油三酸酯（312±27 vs 312±42毫克/天; P = 0.8）水平，但显着饲喂高脂，维生素D缺乏症的小鼠的血清25（OH）D水平含量要低得多（19±3.4 vs 87±10 nmol / L; P <0.01）
 
 与从缺乏维生素D的小鼠中分离出的巨噬细胞相比，从具有维生素D的高胆固醇血症小鼠中分离出的巨噬细胞显示出更少的油红O滴，总胆固醇和甘油三酯更低（图1C至1E）。
@@ -73,7 +75,7 @@ media 同时缺乏25(OH)D和1,25(OH)~2~D
     <img src = "https://raw.githubusercontent.com/Kingsman-Key/Typora-picture/typora/image-20201128214308794.png">
 </center>
 
-这里说明VD调整胆固醇代谢是独立于巨噬细胞血糖状况的，在这些培养条件下不受患者摄入HMG-CoA还原酶抑制剂的影响
+这里说明VD调整胆固醇代谢是独立于巨噬细胞血糖状况的，在这些培养条件下不受患者摄入**HMG-CoA**还原酶抑制剂的影响
 
 
 
@@ -107,7 +109,7 @@ media 同时缺乏25(OH)D和1,25(OH)~2~D
 
 
 
-与标记的OXLDL一起孵育24小时后，测定了A组糖尿病受试者巨噬细胞中的胆固醇外流。补充$1,25(OH)_2D_3$不能调节被动，高密度脂蛋白刺激或载脂蛋白AI刺激的巨噬细胞胆固醇外流（图IVA）。与缺乏维生素D的培养基上的细胞相比，添加$1,25(OH)_2D_3$确实使巨噬细胞ABCA1 mRNA表达降低了30％（P <0.05），但没有抑制ABCG1和SR-B1 mRNA表达（图IVB数据补充）。
+与标记的OXLDL一起孵育24小时后，测定了A组糖尿病受试者巨噬细胞中的胆固醇外流。补充$1,25(OH)_2D_3$不能调节被动，高密度脂蛋白刺激或载脂蛋白AI刺激的巨噬细胞胆固醇外流（图IVA）。与缺乏维生素D的培养基上的细胞相比，添加$1,25(OH)_2D_3$确实使巨噬细胞ABCA1 mRNA表达降低了30％（P <0.05），但没有抑制**ABCG1和SR-B1 mRNA表达**（图IVB数据补充）。
 
 <center class = "half">
     <img src = "https://raw.githubusercontent.com/Kingsman-Key/Typora-picture/typora/image-20201128215019658.png" width = 50%><img src = "https://raw.githubusercontent.com/Kingsman-Key/Typora-picture/typora/image-20201128215103983.png" width = 50%>
@@ -117,7 +119,7 @@ media 同时缺乏25(OH)D和1,25(OH)~2~D
 ### Decrease in Macrophage Cholesterol Uptake Induced by $1,25(OH)_2D_3$ Is CD36 and SR-A1 Dependent
 
 
-在A组糖尿病人身上提取出来的巨噬细胞，在高葡萄糖和正常葡萄糖培养的过程中，加入$1,25(OH)_2D_3$培养的巨噬细胞与VD缺乏的培养基相比，在经过两种血糖条件下oxLDL诱导后，CD36 mRNA表达量降低了六倍， 总CD36蛋白和膜相关CD36蛋白表达降低40%。图3A至3C
+在A组糖尿病人身上提取出来的巨噬细胞，在高葡萄糖和正常葡萄糖培养的过程中，加入$1,25(OH)_2D_3$培养的巨噬细胞与VD缺乏的培养基相比，在经过两种血糖条件下oxLDL诱导后，CD36 mRNA表达量降低了六倍， 总CD36蛋白和膜相关CD36蛋白表达降低40%。图3A至3**C**
 
 <center class="half">
     <img src="https://raw.githubusercontent.com/Kingsman-Key/Typora-picture/typora/20201129134446.png"/>
@@ -380,3 +382,7 @@ $1,25(OH)_2D_3$抑制糖尿病患者巨噬细胞胆固醇酯蓄积的能力可�
 
 [^16]: Roullet JB, Haluska M, Morchoisne O, McCarron DA. 1,25- Dihydroxyvitamin D3-induced alterations of lipid metabolism in human monocyte-macrophages. Am J Physiol. 1989;257:E290 –E295.
 
+
+
+[^a]: 
+[^b]: 
