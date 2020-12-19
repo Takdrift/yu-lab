@@ -63,16 +63,12 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   weight = 40
   identifier = "categories"
   url = "/categories/"
-[[menu.main]]
-  name = "Yu盘"
-  weight = 50
-  identifier = "drive"
-  url = "http://drive.zjulab.org/"  
-#[[menu.main]]
-#  name = "external-link"
-#  weight = 50
-#  url = "https://gohugo.io"
-
+# [[menu.main]]
+  # name = "Yu盘"
+  # weight = 50
+  # identifier = "drive"
+  # url = "http://drive.zjulab.org/"  
+  
 
 [params]
   since = "2019"            # Site creation time          # 站点建立时间
@@ -112,5 +108,8 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:shaobl@zju.edu.cn"
+    a-email = "mailto:yulab.zju@gmail.com"
 	
+  [params.livere]          	#LiveRe comment. see https://www.livere.com/
+	  uid = "MTAyMC81MjIyNS8yODcwNQ=="
+	  
