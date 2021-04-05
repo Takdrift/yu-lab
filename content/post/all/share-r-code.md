@@ -173,3 +173,6 @@ Sys.getenv("http_proxy")  # 查看代理信息
 Sys.getenv("https_proxy")  # 查看代理信息
 ```
 
+## 中文乱码
+
+若RStudio中出现中文乱码，可尝试运行Sys.setlocale("LC_ALL","Chinese")，或在.\etc\Rprofile.site加一行`Sys.setlocale("LC_ALL","Chinese")`
