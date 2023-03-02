@@ -113,3 +113,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
 	  uid = "MTAyMC81MjIyNS8yODcwNQ=="
 	  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
