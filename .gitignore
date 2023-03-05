@@ -3,5 +3,10 @@
 .RData
 .Ruserdata
 *.exe
-public
-blogdown
+/public/
+/blogdown
+.DS_Store
+Thumbs.db
+.hugo_build.lock
+/resources/
+/themes/jane/
