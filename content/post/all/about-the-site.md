@@ -1,14 +1,14 @@
 ---
 title: "关于本博客"
 date: 2019-04-13
-lastmod: 2019-04-13
+lastmod: 2023-03-05
 draft: false
 weight: 1
 #slug: ""
 keywords: [博客, 介绍]
 tags: [介绍]
 #categories: []
-author: "Shao"
+author: "Shao Bule"
 ---
 
 ## 为什么有这个博客
@@ -35,7 +35,7 @@ author: "Shao"
 
 在R中可以通过`blogdown`包建立博客并且可直接在Rstudio中通过Rmarkdown写文章并发布，但下面介绍的建站方法并非基于R，原因主要有
 
-1. 还有一部分老同志的主力科研软件是`SAS`
+1. 还有一部分老同志的主力科研软件是`SAS`（2023年大家都用R了，等海波写篇blogdown的教程）
 2. 相较`R`中的**Rmarkdown**，还有更高效好用的**markdown**编辑器（如[typora](<https://typora.io/>)）
 
 ### Hugo篇
@@ -82,13 +82,13 @@ author: "Shao"
 
 登陆自己的GitHub账号，然后打开<https://github.com/Takdrift/yu-lab>，点击右上角的`Fork`按钮就可以把博客的源码复制到自己的代码仓库。
 
-![fork](about-the-site.assets/fork.png)
+![image-20230305135842644](https://raw.githubusercontent.com/Takdrift/pic-repo/master/image-20230305135842644.png)
 
 #### 2.下载博客
 
 完成第一步后，打开GitHub Desktop客户端，登陆自己的账号，点击`File`-`Clone repository`（**Ctrl+Shift+O**），根据下图操作后GitHub上的整个博客就克隆到我们的电脑上了。
 
-![clone](about-the-site.assets/clone.png)
+![clone](https://raw.githubusercontent.com/Takdrift/pic-repo/master/clone.png)
 
 #### 3. 添加文章
 
@@ -144,25 +144,25 @@ author: "Yu Group"  # 作者，会显示在文末
 
 本地预览确认无误后通过下面的步骤将相应的修改`push`到你`fork`过来的`repo`并通过`pull request`申请合并至源`repo`。打开**GitHub Desktop**，客户端会自动检测更改，如下图所示对所做的修改进行备注说明并提交（`commit`）。
 
-![commit](about-the-site.assets/commit.png)
+![commit](https://raw.githubusercontent.com/Takdrift/pic-repo/master/commit.png)
 
 **将修改同步至GitHub**
 
 点击`Commit to master`后，还需要点击面板右侧的`Push origin`（**Ctrl+P**）才会真正将本地修改同步至GitHub。
 
-![push](about-the-site.assets/push.png)
+![push](https://raw.githubusercontent.com/Takdrift/pic-repo/master/push.png)
 
 **发起合并申请（pull request）**
 
 同步完成后你所修改的内容还只是在自己`fork`过来的代码仓库里，需要通过发起`pull request`（**Ctrl+R**），申请将自己的修改合并至源`repo`（如下图）。
 
-![pull request](about-the-site.assets/pull request.png)
+![pull request](https://raw.githubusercontent.com/Takdrift/pic-repo/master/pull%20request.png)
 
 点击后，浏览器会自动跳转到相应网页，如下图点击`Create pull request`![creat pr](about-the-site.assets/creat pr.png)
 
 填写相应**说明**后提交即可
 
-![creat pr2](about-the-site.assets/creat pr2.png)
+![creat pr2](https://raw.githubusercontent.com/Takdrift/pic-repo/master/creat%20pr2.png)
 
 接着，源`repo`所有者会收到相应的合并请求（`pull request`），审查通过并`merge`之后源`repo`的内容就会得到更新。
 
@@ -176,7 +176,7 @@ author: "Yu Group"  # 作者，会显示在文末
 
 操作步骤如下：
 
-![pr1](about-the-site.assets/pr1.png)
+![pr1](https://raw.githubusercontent.com/Takdrift/pic-repo/master/pr1.png)
 
 1. 点击`Fetch origin` 获取云端各个`repo`的最新状态
 2. 点击`Current branch` 后点击`Choose a branch to merge into master`，并在弹出的窗口中选择需同步的源`repo`（一般为**upstream/master**），若源repo有更新，在下方会显示**This will merge...**，点击下方的`Merge upstream/master into master`就完成了本地与源`repo`的同步
@@ -217,7 +217,17 @@ Markdown语法主要分为如下几大部分：
 
 效果：  
 
-![header](about-the-site.assets/header.png)
+> # 一级标题
+>
+> ## 二级标题
+>
+> ### 三级标题
+>
+> #### 四级标题
+>
+> ##### 五级标题
+>
+> ###### 六级标题
 
 ##### 2.2 段落
 段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用**两个以上**空格加上回车（引用中换行省略回车）。
@@ -307,11 +317,11 @@ Hugo支持包括`R`在内的大部分编程语言的**高亮**，但目前还不
 链接可以由两种形式生成：**行内式**和**参考式**。
 **行内式**：
 
-> \[学术活动]\(<http://www.phs.zju.edu.cn/redir.php?catalog_id=96968> "Academy"\)
+> \[ZJU个人主页]\(<https://person.zju.edu.cn/yunxianyu> "Academy"\)
 
 效果： 
 
-> [学术活动](<http://www.phs.zju.edu.cn/redir.php?catalog_id=96968> "Academy")
+> [ZJU个人主页](<https://person.zju.edu.cn/yunxianyu> "Academy")
 
 **参考式**：
 
@@ -342,7 +352,7 @@ You can create footnotes like this[^footnote].
 
 上文已经提到了[*typora*](<https://typora.io/>)，市面上大部分**markdown**编辑器采用的是分栏显示，即左边显示源码，右边显示编译成`html`之后的文档，而typora将二者独立，即实时编译模式（即一边输入一边编译）和源码模式，二者可通过`Ctrl+/`进行切换。
 
-![typora typing](about-the-site.assets/typora typing.gif)
+![typora typing](https://raw.githubusercontent.com/Takdrift/pic-repo/master/typora%20typing.gif)
 
 typora的优点：
 
@@ -355,43 +365,13 @@ typora的优点：
 
 在添加文章部分提到了在文章中插入图片的两种方式，网络引用（图床）和本地引用。
 
-图床的使用见[下文](#图床软件推荐)，这里介绍如何设置本地图片的**相对路径引用**
-
-如下图，在全局图像设置里选择复制图片到`./${filename}.assets`文件夹，并且​勾选:heavy_check_mark:**优先使用相对路径**。随后，将图片拖进typora中该图片会自动复制到与文章同目录下的`filename.asset`文件夹里(filename为文章的文件名，中英都可以，英文需**小写**)。
-
-![typora setting](about-the-site.assets/typora setting.png)
-
-**将文章与存放图片的文件夹复制到博客**`content`**目录**
-
-在添加文章的部分提到了新增文章只需要将`.md`文件复制到博客的`content`目录下的相应目录即可，若文中引用的图片均来源于网络（即通过URL引用），那就只需要一个markdown文件。
-
-**若你引用了本地图片，需按照下面的步骤操作：**
-
-假设有一篇文件名为`share-r-code.md`的文章，且文中使用相对路径引用了本地图片，图片在文章同目录下的`share-r-code.assets`文件夹中。
-
-1. 将`share-r-code.md`文件复制到博客的`content\post\all`目录下（文章可以放在`content\post\ `文件夹下或子文件夹中）
-2. 在`share-r-code.md`所在目录**新建**一个名为`share-r-code`的文件夹
-3. 将`share-r-code.assets`文件夹复制到`share-r-code`文件夹里
-
-**文件结构如下：**
-
-```shell
-content
- └─post
-    └─all
-       │ share-r-code.md
-       └─share-r-code
-           └─share-r-code.assets
-                   fig1.png
-                   fig2.png
-```
-这样做的目的是为了在生成博客文章时能指向正确的图片路径
+推荐采用图床，使用见[下文](#图床软件推荐)
 
 ### 图床软件推荐
 
-图床即可储存图片的云端服务，使用图床后就无需在本地储存`.md`中的图片，typora在mac端可以配合iPic方便地进行图片的上传并自动生成**markdown**语句。Win端也有一款较好用的开源软件，[PicGo](<https://github.com/Molunerfinn/PicGo>)。
+图床即可储存图片的云端服务，使用图床后就无需在本地储存`.md`中的图片，typora在mac端可以配合iPic方便地进行图片的上传并自动生成**markdown**语句。Win端也有一款较好用的开源软件，[PicGo](<https://molunerfinn.com/PicGo/>)，typora现在已经内置PicGo，可实现拖曳图片至文章后自动上传至图床的功能，也可以将既往采用本地图片的markdown文章一键上传全部图片至图床。
 
-PicGo目前支持：  
+PicGo目前支持（2019.4）：  
 - `微博图床` v1.0  
 - `七牛图床` v1.0  
 - `腾讯云COS v4\v5版本` v1.1 & v1.5.0  
@@ -401,7 +381,7 @@ PicGo目前支持：
 - `阿里云OSS` v1.6.0  
 - `Imgur` v1.6.0
 
-推荐使用**GitHub**作为私人图床，**免费**且有**保障**。
+推荐使用**GitHub**作为私人图床，**免费**且有**保障**，但因网络问题可能会间断出现加载缓慢或者无法加载的情况，建议科学上网。
 
 具体方法设置方法见[官方文档](<https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A>)
 
