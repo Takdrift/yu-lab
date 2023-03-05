@@ -4,9 +4,9 @@ date: 2019-08-05  # 创建日期
 lastmod: 2019-08-05  # 最后修改日期
 draft: false  # =true为草稿，不会生成相应的网页
 #slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
-keywords: [R, 学习资料, gganimate, ggplot]  # 关键字
-tags: [R, 地图, gganimate, ggplot, 动图]  # 标签，会将此文章添加到指定的标签下
-categories: [Shao Bule, R, 数据可视化]  # 分类，会将此文章添加到指定的分类下
+keywords: [R, 学习资料, gganimate, ggplot, 数据可视化]  # 关键字
+tags: [R, 地图, gganimate, ggplot, 动图, 数据可视化]  # 标签，会将此文章添加到指定的标签下
+categories: [Shao Bule]  # 分类，会将此文章添加到指定的分类下
 author: "Shao Bule"  # 作者
 ---
 
@@ -71,6 +71,8 @@ anim_save("C:/DATA/PhD/R/地图作图-数据/GDP-8fps-20s.gif")
 ```
 
 <div align=center><b>:point_down:最终效果:point_down:</b></div>
+
+
 ![](https://raw.githubusercontent.com/Takdrift/pic-repo/master/GDP-8fps-20s.gif)
 
 # 地图GIF
@@ -145,6 +147,8 @@ anim_save("C:/DATA/PhD/R/地图作图-数据/GDP-map-8fps-20s.gif")
 
 
 <div align=center><b>:point_down:最终效果:point_down:</b></div>
+
+
 ![](https://raw.githubusercontent.com/Takdrift/pic-repo/master/GDP-map-8fps-20s.gif)
 
  

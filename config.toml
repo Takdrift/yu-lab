@@ -110,8 +110,23 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   [params.social]                                         # 社交链接
     a-email = "mailto:yulab.zju@gmail.com"
 	
-  [params.livere]          	#LiveRe comment. see https://www.livere.com/
-	  uid = "MTAyMC81MjIyNS8yODcwNQ=="
+  # [params.livere]          	#LiveRe comment. see https://www.livere.com/
+	  # uid = "MTAyMC81MjIyNS8yODcwNQ=="
+	  
+  [params.giscus]         # giscus is a comment system based on GitHub Discussions. see https://giscus.app
+    enable = true
+    repo = "Takdrift/comments-yu-lab"
+    repoId = "R_kgDOJFe6bw"
+    category = "Announcements"
+    categoryId = "DIC_kwDOJFe6b84CUpwU"
+    # mapping = "pathname"  # comment value is the default value
+    # strict = 0
+    # reactionsEnabled = 1
+    # emitMetadata = 0
+    # inputPosition = "top"
+    # theme = "light"
+    # lang = "en"
+    # lazyLoading = false
 	  
 [markup]
   [markup.goldmark]

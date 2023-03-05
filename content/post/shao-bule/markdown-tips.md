@@ -8,8 +8,8 @@ draft: false  # =true为草稿，不会生成相应的网页，!!!需要改为fa
 # keywords, tags, categories都可以设置多个，中间需要用英文逗号(,)隔开
 keywords: [markdown]  # 关键字
 tags: [markdown]  # 标签，会将此文章添加到相应的标签下（建议查看既往的标签，防止相同含义的不同标签）
-categories: []  # 分类，会将此文章添加到指定的分类下（建议使用各自的姓名，且只设置一个分类）
-author: "Yu Group"  # 作者，会显示在文末
+categories: [Shao Bule]  # 分类，会将此文章添加到指定的分类下（建议使用各自的姓名，且只设置一个分类）
+author: "Shao Bule"  # 作者，会显示在文末
 ---
 
 # HTML
@@ -38,7 +38,7 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 
 2. 同样[舟山孕妇血样情况](/post/shao-bule/2016-2018-zhoushan-blood-sample/#六-其他疾病信息)这篇文章中的:point_down:**词云**:point_down:也是用`iframe`添加到网页中的。
 
-<Iframe src="/post/shao-bule/2016-2018-zhoushan-blood-sample/2016-2018-zhoushan-blood-sample.assets/wordcloud";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+<Iframe src="/post/shao-bule/2016-2018-zhoushan-blood-sample/2016-2018-zhoushan-blood-sample.assets/wordcloud.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
 
 ## 图片设置
 
@@ -47,17 +47,17 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 在插入一张宽度小于网页宽度的图片时图片是自动**向左对齐**的，比如：
 
 ```markdown
-![black hole](https://t.cn/Ea3vfXb)
+![black hole](https://raw.githubusercontent.com/Takdrift/pic-repo/master/20190410-78m-500px-black%20hole.png)
 ```
 
 :point_down:效果:point_down:
 
-![black hole](https://t.cn/Ea3vfXb)
+![black hole](https://raw.githubusercontent.com/Takdrift/pic-repo/master/20190410-78m-500px-black%2520hole.png)
 
 **若想使图片居中目前能通过html语法实现，具体语法如下​**:point_down:
 
 ```html
-<div align=center><img src="https://t.cn/Ea3vfXb" alt="black hole"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/20190410-78m-500px-black%20hole.png" alt="black hole"/></div>
 ```
 
 **语法注释：**
@@ -67,12 +67,12 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 
 <div align=center><p>:point_down:效果:point_down:</p></div>
 
-<div align=center><img src="https://t.cn/Ea3vfXb" alt="black hole"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/20190410-78m-500px-black%2520hole.png" alt="black hole"/></div>
 
 还能通过`width`和`height`设置**固定尺寸**:point_down:
 
 ```html
-<div align=center><img src="https://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/20190410-78m-500px-black%2520hole.png" width="300" alt="black hole"/></div>
 ```
 
 **Tips:**
@@ -80,7 +80,7 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 - `width`与`height`只设置其一则会自动等比缩放，若两者都设置则**hugo**会以`width`为准进行缩放而忽略`height`，而**typora**会根据两者具体值进行缩放
 - `width`还可以用**百分比**设置，如`width="50%"`
 
-<div align=center><img src="https://t.cn/Ea3vfXb" width="300" alt="black hole"/></div>
+<div align=center><img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/20190410-78m-500px-black%2520hole.png" width="300" alt="black hole"/></div>
 
 ### excel表格导出为图片
 

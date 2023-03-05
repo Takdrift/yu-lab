@@ -6,7 +6,7 @@ draft: false  # =true为草稿，不会生成相应的网页
 #slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
 keywords: [R, 学习资料]  # 关键字
 tags: [R, 学习资料]  # 标签，会将此文章添加到指定的标签下
-categories: [R, 学习资料]  # 分类，会将此文章添加到指定的分类下
+categories: [R]  # 分类，会将此文章添加到指定的分类下
 author: "Yu Group"  # 作者
 ---
 
@@ -103,7 +103,7 @@ ggpubr Key features:
 
 example:
 
-![ggarrange](http://www.sthda.com/english/sthda-upload/images/ggpubr/arrange-multiple-ggplots.png)
+![ggarrange](https://raw.githubusercontent.com/Takdrift/pic-repo/master/arrange-multiple-ggplots.png)
 
 ## [静态地图](/post/si-shuting/用r绘制地图/)
 

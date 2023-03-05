@@ -8,8 +8,8 @@ draft: false  # =true为草稿，不会生成相应的网页，!!!需要改为fa
 # keywords, tags, categories都可以设置多个，中间需要用英文逗号(,)隔开
 keywords: [emoji, markdown]  # 关键字
 tags: [emoji, markdown]  # 标签，会将此文章添加到相应的标签下（建议查看既往的标签，防止相同含义的不同标签）
-categories: []  # 分类，会将此文章添加到指定的分类下（建议使用各自的姓名，且只设置一个分类）
-author: "Yu Group"  # 作者，会显示在文末
+categories: [Shao Bule]  # 分类，会将此文章添加到指定的分类下（建议使用各自的姓名，且只设置一个分类）
+author: "Shao Bule"  # 作者，会显示在文末
 ---
 
 # EMOJI CHEAT SHEET
