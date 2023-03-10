@@ -1,7 +1,7 @@
 ---
 title: "舟山孕妇血样情况"
 date: 2019-03-12
-lastmod: 2019-03-28
+lastmod: 2023-03-08
 draft: false
 keywords: [舟山, 血样]
 tags: [舟山, 血样, 数据概况]
@@ -220,6 +220,7 @@ author: "Shao Bule"
 ## 六. 其他疾病信息
 
 <Iframe src="2016-2018-zhoushan-blood-sample.assets/wordcloud.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+
 ### 图6.1 孕期高危因素情况
 
 ![riskname](https://raw.githubusercontent.com/Takdrift/pic-repo/master/riskname.png)
@@ -227,11 +228,12 @@ author: "Shao Bule"
 ### 全部舟山孕妇产前随访高危因素分布情况（n=84260）
 
 <Iframe src="2016-2018-zhoushan-blood-sample.assets/wordcloud_all_data.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+
 **图6.2 舟山孕妇产前随访高危因素分布(n=84260)**
 
 ![riskname_all_data](https://raw.githubusercontent.com/Takdrift/pic-repo/master/riskname_all_data.png)
 
-GDM分级：
+**GDM分级：**
 
 - A1级：空腹血糖<5.8mmol/L，经饮食控制，餐后2小时血糖<6.7mmol/L
 - A2级：空腹血糖≥5.8mmol/L或经饮食控制餐后2小时血糖≥6.7mmol/L者，需使用胰岛素控制血糖
@@ -245,7 +247,7 @@ GDM分级：
 > - 服糖后2小时8.6
 > - 服糖后3小时7.8
 >
-> 　　注：2个以上时间点高于上述标准可确定诊断
+> 　　注：**2个以上**时间点高于上述标准可确定诊断
 
 ### 表6.1 母婴结局（n=5465）
 
