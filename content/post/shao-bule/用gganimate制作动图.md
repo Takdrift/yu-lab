@@ -3,7 +3,7 @@ title: "用gganimate制作动图"  # 文章标题，在网也中显示的标题
 date: 2019-08-05  # 创建日期
 lastmod: 2019-08-05  # 最后修改日期
 draft: false  # =true为草稿，不会生成相应的网页
-#slug: ""  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
+slug: "gif-with-gganimate"  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
 keywords: [R, 学习资料, gganimate, ggplot, 数据可视化]  # 关键字
 tags: [R, 地图, gganimate, ggplot, 动图, 数据可视化]  # 标签，会将此文章添加到指定的标签下
 categories: [Shao Bule]  # 分类，会将此文章添加到指定的分类下

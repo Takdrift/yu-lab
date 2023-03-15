@@ -103,7 +103,13 @@ ggpubr Key features:
 
 example:
 
-![ggarrange](https://raw.githubusercontent.com/Takdrift/pic-repo/master/arrange-multiple-ggplots.png)
+<img src="https://raw.githubusercontent.com/Takdrift/pic-repo/master/arrange-multiple-ggplots.png" alt="ggarrange" style="zoom: 50%;" />
+
+## Radar Chart（雷达图）
+
+可以通过[`fmsb`](https://www.datanovia.com/en/blog/beautiful-radar-chart-in-r-using-fmsb-and-ggplot-packages/) 包绘制Radar Chart（雷达图）。
+
+<img src="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/r-tutorial/figures/radar-chart-in-r-customized-fmstb-radar-chart-1.png" style="zoom: 35%;" />
 
 ## [静态地图](/post/si-shuting/用r绘制地图/)
 
@@ -112,6 +118,88 @@ example:
 ## [GIF](/post/shao-bule/用gganimate制作动图/)
 
 ## [data mining with R](/post/zhou-haibo/data_mining_with_R)
+
+# R Markdown
+
+## HTML加密
+
+若发可能布含有敏感信息的内容时，用[`fidelius`](https://github.com/mattwarkentin/fidelius)包对HTML加密是一个不错的选择。安装该包，并在R Markdown YAML信息中做相应设置即可输出加密的HTML。在正式发布前可以设置`preview: true`，这样在本地预览时会忽略密码。
+
+> 注：如果发布了加密的HTML，源R Markdown文本请注意不要放在公开的网站
+
+```R
+---
+title: "My Protected Document"
+output:
+  fidelius::html_password_protected:
+    password: "password"  # the password
+    hint: "Hint for password"  # hint for the password
+    preview: true  # true: will generate the HTML without password
+    output_format:  # use a customized format 
+      rmarkdown::html_document:  
+        toc: true
+---
+```
+
+## 输出SVG图片格式
+
+可在每个图片单独的`Chunk`里设置`dev`参数，也可以在文档开头进行全局设置。
+
+~~~R
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'svg', echo = FALSE, warning = FALSE, message = FALSE)
+```
+~~~
+
+## 图片中文乱码
+
+当输出的图片设置了SVG格式时，会出现图片里中文不能显示的问题。[解决的方法](https://d.cosx.org/d/420903-r-markdown-svg/3)就是在图片代码的`Chunk`里设置`fig.showtext = TRUE`。
+
+~~~R
+```{r plot, fig.width = 8, fig.height = 8, fig.align = 'center', fig.showtext = TRUE}
+~~~
+
+## 中文字体
+
+想要在输出的图片中设置不同的字体，需要导入系统中的字体，具体代码如下。
+
+```R
+# 载入系统字体
+windowsFonts(               # define fonts, Mac: quartzFonts()  
+  caiyun = windowsFont("华文彩云"),  
+  fangsong = windowsFont("华文仿宋"),  
+  xingkai = windowsFont("华文行楷"),  
+  kaishu = windowsFont("华文楷体"),  
+  lishu = windowsFont("华文隶书"),  
+  zhongsong = windowsFont("华文中宋"),  
+  xihei = windowsFont("华文细黑"),  
+  yahei = windowsFont("微软雅黑"),  
+  xinwei = windowsFont("华文新魏"),  
+  youyuan = windowsFont("幼圆")  
+)   
+
+# 设置字体函数theme_font，默认为微软雅黑，方便ggplot2作图时快速统一修改图片中的字体
+theme_font <- function(font_family = 'yahei') {
+  theme(
+    title = element_text(family = font_family),
+    text = element_text(family = font_family),
+    plot.title = element_text(family = font_family),
+    strip.text = element_text(family = font_family),
+    axis.title = element_text(family = font_family),
+    axis.text = element_text(family = font_family),
+    legend.text = element_text(family = font_family),
+    legend.title = element_text(family = font_family)
+  )
+}
+
+# p为ggplot作图数据，只需要加上theme_font()函数即可修改图片字体
+p + theme_font()  # 默认为微软雅黑
+
+# 修改字体
+p + theme_font('kaishu')  # 华文行楷
+```
+
+
 
 # 统计模型
 

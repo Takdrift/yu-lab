@@ -3,6 +3,7 @@ title: "舟山孕妇产前随访高危因素SAS code"
 date: 2019-04-10
 lastmod: 2019-04-10
 draft: false
+slug: "high-risk-women-sas-code"  # 所生成网页的地址后缀，若未设置，会根据文件名生成地址
 keywords: [舟山, 高危因素, SAS code]
 tags: [舟山, 高危因素, SAS code]
 categories: [Shao Bule]

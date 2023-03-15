@@ -36,8 +36,11 @@ $$
 $$
 d(\mu)=k \mu^2-2 \mu \sum_{i=1}^k\left(y_i\right)+\sum_{i=1}^k\left(y_i^2\right)
 $$
-其实我也看不懂这些破玩意，但是，我们只需要记住，线性回归最后计算出来的是条件**期望均值**，相应的，分位数回归计算的是**期望分位数值**（中位数，上四分位数，下四分位数等），分位数回归是线性回归的延伸。下面是分位数回归的示意图。
-- 
+
+
+其实我也看不懂这些破玩意$x$，但是，我们只需要记住，线性回归最后计算出来的是条件**期望均值**，相应的，分位数回归计算的是**期望分位数值**（中位数，上四分位数，下四分位数等），分位数回归是线性回归的延伸。下面是分位数回归的示意图。
+
+
 
 
 ### 何时可以考虑使用分位数回归
@@ -88,12 +91,12 @@ plot(sumQR)
 ```
 R语言可能的报错
 
+>Error in base::backsolve(r, x, k = k, upper.tri = upper.tri, transpose = transpose,  : 
+>singular matrix in 'backsolve'. First zero in diagonal [1]
+>In addition: Warning message:
+>In summary.rq(xi, U = U, ...) : 2216 non-positive fis
 >
-Error in base::backsolve(r, x, k = k, upper.tri = upper.tri, transpose = transpose,  : 
-  singular matrix in 'backsolve'. First zero in diagonal [1]
-In addition: Warning message:
-In summary.rq(xi, U = U, ...) : 2216 non-positive fis
-
+>
 
 首先，看这个矩阵是不是方阵（即行数和列数相等的矩阵。若行数和列数不相等，那就谈不上奇异矩阵和[非奇异矩阵](https://baike.baidu.com/item/%E9%9D%9E%E5%A5%87%E5%BC%82%E7%9F%A9%E9%98%B5?fromModule=lemma_inlink)）。 然后，再看此矩阵的行列式|A|是否等于0，若等于0，称矩阵A为奇异矩阵；若不等于0，称矩阵A为非奇异矩阵。 同时，由|A|≠0可知矩阵A可逆，这样可以得出另外一个重要结论:[可逆矩阵](https://baike.baidu.com/item/%E5%8F%AF%E9%80%86%E7%9F%A9%E9%98%B5?fromModule=lemma_inlink)就是非奇异矩阵，非奇异矩阵也是可逆矩阵。　如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一[零解](https://baike.baidu.com/item/%E9%9B%B6%E8%A7%A3?fromModule=lemma_inlink)，AX=b有唯一解。
 而在线性回归中如果自变量数目大于样本数，也会出现奇异矩阵导致无法求解。[^3]
@@ -163,7 +166,7 @@ Note. SOM: somatization; O-C: obsessive-compulsive; I-S: interpersonal sensitivi
 <sup>a</sup> _P_ value < 0.00111 was regarded as significant after Bonferroni corrected
 
 <sup>b</sup> _P_ value < 0.00138 was regarded as significant after Bonferroni corrected
- 
+
 Correlations (r) between subscales within the SCL-90 were measured using Pearson correlations, and internal correlations for the IS subscales were measured using Spearman rank correlation coefficients, both of which were checked for significance using t-tests
 
 #### Table 2 Bivariate Correlations and Descriptive Statistics of parental rearing and IS (n = 3345)
@@ -222,7 +225,7 @@ Quantile regressions predicting interpersonal sensitivity at the 0.05–0.95 qua
 - 贝叶斯算法的分位数回归
 - 机器学习算法的分位数回归
 - 生存分析的分位数回归
-- Estimation of quantile treatment effects with Stata https://www.stata-journal.com/article.html?article=st0203
+- [Estimation of quantile treatment effects with Stata](https://www.stata-journal.com/article.html?article=st0203) 
 - 治疗结果评估 （Quantile treatment effect）
 - 内生性治疗的治疗效果
 
@@ -262,12 +265,13 @@ ivqte lwage (college = nearc4), variance dummy(black) continuous(exper motheduc)
 ```
 - 针对可观察变量（selection on observables）的干预是外生性干预，针对不可观测变量（selection on unobservables）的干预是内生性干预
 - 条件效应（conditional effect）表示估计的分位数期忘是根据自变量的和非条件效应（unconditional effect）表示估计的分位数期望是针对整个入群的
+>Depending on the type of endogeneity of the treatment and the definition of the estimand, we can define four different cases. We distinguish between conditional and unconditional effects and whether selection is on observables or on unobservables. Conditional QTEs are defined conditionally on the value of the regressors, whereas unconditional effects summarize the causal effect of a treatment for the entire population. Selection on observables is often referred to as a matching assumption or as exogenous treatment choice (that is, exogenous conditional on X). In contrast, we refer to selection on unobservables as endogenous treatment choice.
 >
-Depending on the type of endogeneity of the treatment and the definition of the estimand, we can define four different cases. We distinguish between conditional and unconditional effects and whether selection is on observables or on unobservables. Conditional QTEs are defined conditionally on the value of the regressors, whereas unconditional effects summarize the causal effect of a treatment for the entire population. Selection on observables is often referred to as a matching assumption or as exogenous treatment choice (that is, exogenous conditional on X). In contrast, we refer to selection on unobservables as endogenous treatment choice.
+>
 
 $$
 \\begin{aligned}
-\\left(\\widehat{\\alpha}\_{\\mathrm{IV}}, \\widehat{\\Delta}\_{\\mathrm{IV}}^\\tau\\right) & =\\underset{\\alpha, \\Delta}{\\arg \\min } \\sum W\_i^{\\mathrm{FM}} \\times \\rho\_\\tau\\left(Y\_i-\\alpha-D\_i \\Delta\\right) \\\\
+\\left(\\widehat{\\alpha}\_{\\mathrm{IV}}, \\widehat{\\Delta}\_{\\mathrm{IV}}^\\tau\\right) & =\\underset{\\alpha, \\Delta}{\\arg \\min} \\sum W\_i^{\\mathrm{FM}} \\times \\rho\_\\tau\\left(Y\_i-\\alpha-D\_i \\Delta\\right) \\\\
 W\_i^{\\mathrm{FM}} & =\\frac{Z\_i-\\operatorname{Pr}\\left(Z=1 \\mid X\_i\\right)}{\\operatorname{Pr}\\left(Z=1 \\mid X\_i\\right)\\left\\{1-\\operatorname{Pr}\\left(Z=1 \\mid X\_i\\right)\\right\\}}\\left(2 D\_i-1\\right)
 \\end{aligned} \\tag 4
 $$
@@ -300,9 +304,12 @@ library(mquantreg) # https://r-project.ro/conference2020/presentations/Mquantreg
 # 模型评估
 ## 注意事项
 - 模型的评估一般不能使用原始数据，而是要用原始数据的一部分作为测试集
+
 - 可是使用重抽样技术和十倍交叉验证方法进行模型验证
+
 - 模型中纳入二次项时，可能会在极端值条件下预测效果不佳，因为二次项在遭遇极大值和极小值时可能会给出不切实际的预测值
-- 
+
+  
 
 [^1]: Wehby GL, Murray JC, Castilla EE, Lopez-Camelo JS, Ohsfeldt RL. Quantile Effects of Prenatal Care Utilization on Birth Weight in Argentina. _Health Econ_. 2009;18(11):1307-1321. doi:[10.1002/hec.1431](https://doi.org/10.1002/hec.1431)* [Local library](zotero://select/library/items/CX8KTUZA)
 [^2]: Wei Y, Pere A, Koenker R, He X. Quantile regression methods for reference growth charts. _Statistics in Medicine_. 2006;25(8):1369-1382. doi:[10.1002/sim.2271](https://doi.org/10.1002/sim.2271)* [Local library](zotero://select/library/items/FXCX2MGN)

@@ -38,7 +38,7 @@ width="1000" height="2000" scrolling="yes" frameborder="0"></iframe>
 
 2. 同样[舟山孕妇血样情况](/post/shao-bule/2016-2018-zhoushan-blood-sample/#六-其他疾病信息)这篇文章中的:point_down:**词云**:point_down:也是用`iframe`添加到网页中的。
 
-<Iframe src="/post/shao-bule/2016-2018-zhoushan-blood-sample/2016-2018-zhoushan-blood-sample.assets/wordcloud.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+<Iframe src="/webpage/wordcloud.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
 
 ## 图片设置
 

@@ -80,7 +80,7 @@ author: "Shao Bule"
 
 #### 1.Fork博客源repo
 
-登陆自己的GitHub账号，然后打开<https://github.com/Takdrift/yu-lab>，点击右上角的`Fork`按钮就可以把博客的源码复制到自己的代码仓库。
+登陆自己的GitHub账号，然后打开博客的代码仓库 [![fork](https://raw.githubusercontent.com/Takdrift/pic-repo/master/github.svg)](https://github.com/Takdrift/yu-lab)，点击右上角的`Fork`按钮就可以把博客的源码复制到自己的代码仓库。
 
 ![image-20230305135842644](https://raw.githubusercontent.com/Takdrift/pic-repo/master/image-20230305135842644.png)
 

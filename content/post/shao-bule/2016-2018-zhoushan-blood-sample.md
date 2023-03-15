@@ -219,7 +219,7 @@ author: "Shao Bule"
 
 ## 六. 其他疾病信息
 
-<Iframe src="2016-2018-zhoushan-blood-sample.assets/wordcloud.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+<Iframe src="/webpage/wordcloud.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
 
 ### 图6.1 孕期高危因素情况
 
@@ -227,7 +227,7 @@ author: "Shao Bule"
 
 ### 全部舟山孕妇产前随访高危因素分布情况（n=84260）
 
-<Iframe src="2016-2018-zhoushan-blood-sample.assets/wordcloud_all_data.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
+<Iframe src="/webpage/wordcloud_all_data.html";; width="600" height="400" scrolling="no" frameborder="0"></iframe>
 
 **图6.2 舟山孕妇产前随访高危因素分布(n=84260)**
 
