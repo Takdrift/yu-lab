@@ -352,7 +352,7 @@ avgDF <- function(data,all.imputed){
 
 # 分组计算对应指标均值
 
-```
+```R
 library(dplyr)
 library(magrittr)
 df %>% dplyr::group_by(., factor_col) %>% dplyr::summarise(., colname = mean(var))
@@ -376,7 +376,7 @@ df %>% dplyr::group_by(., factor_col) %>% dplyr::summarise(., colname = mean(var
 
 运行win+R 输入 cmd 操作台中输入如下代码
 
-```
+```powershell
 certutil -hashfile d:\qoogle\qoogle.rar MD5
 ```
 
