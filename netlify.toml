@@ -6,7 +6,6 @@ command = "hugo"
 HUGO_VERSION = "0.111.1"
   
 [context.production.environment]
-RUBY_VERSION = "2.7.0"
 HUGO_VERSION = "0.111.1"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
